@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { FaFlask, FaChartLine, FaRobot, FaUsers,  FaChartBar } from 'react-icons/fa'; // FaEye, FaRobot, FaCertificate, FaChartBar
+import { FaFlask, FaChartLine, FaRobot, FaUsers,  FaChartBar, FaGithub } from 'react-icons/fa'; // FaEye, FaRobot, FaCertificate, FaChartBar
 import "../styles/researchPage.css";
 import { Navbar } from "../components/navbar"; // Import Navbar
 
@@ -20,7 +20,8 @@ export const researchProjects = [
         'Scalable design supporting multiple datasets and real-time visualisation'
       ],
       imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      icon: <FaChartBar className="text-info" size={32} />
+      icon: <FaChartBar className="text-info" size={32} />,
+      githubUrl: 'https://github.com/vicharanashala/DDD'
     }, 
 
     {
@@ -40,7 +41,8 @@ export const researchProjects = [
       // 'Poll automation'
       ],
       imageUrl: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      icon: <FaUsers className="text-dark" size={32} />
+      icon: <FaUsers className="text-dark" size={32} />,
+      githubUrl: 'https://github.com/vicharanashala/PES'
     },
 
     {
@@ -59,7 +61,8 @@ export const researchProjects = [
     // 'Enhanced classroom interactivity and adaptive teaching support'
     ],
     imageUrl: "https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=1626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    icon: <FaRobot className="text-primary" size={32} />
+    icon: <FaRobot className="text-primary" size={32} />,
+    githubUrl: 'https://github.com/vicharanashala/poll-automation'
     },
     {
       id:1,
@@ -75,7 +78,8 @@ export const researchProjects = [
         'Interactive content and community features for enhanced engagement'
       ],
       imageUrl: "https://images.unsplash.com/photo-1576400883215-7083980b6193?q=80&w=1626&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      icon: <FaFlask className="text-warning" size={32} />
+      icon: <FaFlask className="text-warning" size={32} />,
+      githubUrl: 'https://github.com/vicharanashala/vibe'
     }
 ];
 
@@ -199,11 +203,17 @@ const Research = () => {
                             <h6 className="text-muted small mb-2">Collaborators</h6>
                             <p className="small fw-bold">{project.partners.join(', ')}</p>
                           </div> */}
-                          {/*
-                          <button className="btn btn-sm btn-outline-secondary" style={{ marginLeft: '8px' }}>
-                            Learn More <i className="fas fa-arrow-right ms-1"></i>
-                          </button>
-                          */}
+                          {project.githubUrl && (
+                            <a 
+                              href={project.githubUrl} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="btn btn-sm btn-outline-dark d-flex align-items-center gap-2"
+                            >
+                              <FaGithub size={16} />
+                              View on GitHub
+                            </a>
+                          )}
                         </div>
                       </div>
                     </div>
