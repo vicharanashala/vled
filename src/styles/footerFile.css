@@ -75,6 +75,8 @@ html, body {
   width: auto;
   margin-bottom: 18px;
   object-fit: contain;
+  transform: scale(2.5);
+  transform-origin: left center;
 }
 
 .footer-description {

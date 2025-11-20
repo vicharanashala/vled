@@ -66,7 +66,7 @@ export const Header: React.FC<{ onLearnMore?: () => void; onContact?: () => void
         </p>
         <div className="cta-buttons">
           <button className="btn-black" onClick={onLearnMore}>
-            <span>Learn More</span>
+            <span>About VLED</span>
           </button>
           <button className="btn-outline" onClick={onContact}>
             <span>Contact us</span>
@@ -83,7 +83,7 @@ export const Header: React.FC<{ onLearnMore?: () => void; onContact?: () => void
         />
       </div>
     </div>
-    <div
+    {/* <div
       className="scroll-indicator pointer-cursor"
       onClick={() => {
       const el = document.getElementById('research-initiatives');
@@ -94,6 +94,6 @@ export const Header: React.FC<{ onLearnMore?: () => void; onContact?: () => void
     >
       <div className="scroll-text">Discover More</div>
       <FaChevronDown className="scroll-arrow" />
-    </div>
+    </div> */}
   </div>
 );
