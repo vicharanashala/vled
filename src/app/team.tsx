@@ -52,7 +52,7 @@ const Team = () => {
       name: 'Meenakshi V',
       role: 'PhD Researcher',
       department: 'Computer Science',
-      bio: 'A passionate educator and researcher in Education Design at the DLED Lab  with a research journey focused on crafting engaging learning experiences that dissolve the boundary between learning and assessment—envisioning guided learning that makes final exams obsolete. Part of Annam.AI’s AI Skill Development initiative, working to bridge academia and career aspirations.',
+      bio: 'A passionate educator and researcher in Education Design at the VLED Lab  with a research journey focused on crafting engaging learning experiences that dissolve the boundary between learning and assessment—envisioning guided learning that makes final exams obsolete. Part of Annam.AI’s AI Skill Development initiative, working to bridge academia and career aspirations.',
       research: 'ViBe/CAL, Poll Automation',
       img: meenakshi,
       category: 'students',
@@ -269,6 +269,7 @@ const Team = () => {
                   </div>
                 </div>
               </div>
+              {/*
               <div className="modal-footer border-0">
                 <button 
                   type="button" 
@@ -278,13 +279,11 @@ const Team = () => {
                   Close
                 </button>
 
-                {/*
                 <a href={`mailto:${selectedMember.name.split(' ')[0].toLowerCase()}@iitrpr.ac.in`} className="btn btn-primary">
                   Contact {selectedMember.name.split(' ')[0]}
                 </a>
-                */}
-
               </div>
+              */}
             </div>
           </div>
         </div>

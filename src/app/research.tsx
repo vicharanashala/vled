@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { FaFlask, FaChartLine, FaRobot, FaUsers,  FaChartBar } from 'react-icons/fa'; // FaEye, FaRobot, FaCertificate, FaChartBar
 import "../styles/researchPage.css";
@@ -83,11 +82,6 @@ export const researchProjects = [
 
 
 const Research = () => {
-  const [activeFilter, setActiveFilter] = useState('all');
-  
-  const filteredProjects = activeFilter === 'all' 
-    ? researchProjects 
-    : researchProjects.filter(project => project.status === activeFilter);
 
 
   return (
@@ -142,37 +136,12 @@ const Research = () => {
             <p className="lead text-muted max-w-800 mx-auto">
               Interdisciplinary projects at the intersection of education and cutting-edge technology
             </p>
-            
-            {/* Filter Buttons */}
-            <div className="d-flex justify-content-center mb-4 flex-wrap">
-              <div className="btn-group" role="group">
-                <button
-                  type="button"
-                  className={`btn fw-semibold btn-${activeFilter === 'all' ? 'secondary' : 'outline-warning'}`}
-                  onClick={() => setActiveFilter('all')}
-                >
-                  All Projects
-                </button>
-                <button
-                  type="button"
-                  className={`btn fw-semibold btn-${activeFilter === 'ongoing' ? 'secondary' : 'outline-warning'}`}
-                  onClick={() => setActiveFilter('ongoing')}
-                >
-                  Ongoing Research
-                </button>
-                <button
-                  type="button"
-                  className={`btn fw-semibold btn-${activeFilter === 'completed' ? 'secondary' : 'outline-warning'}`}
-                  onClick={() => setActiveFilter('completed')}
-                >
-                  Completed Projects
-                </button>
-              </div>
-            </div>
+            <h2 className="h4 fw-semibold mb-3">Projects</h2>
+
           </div>
 
           <div className="row g-4">
-            {filteredProjects.map((project) => (
+            {researchProjects.map((project) => (
               <div key={project.id} className="col-lg-6">
                 <div className={`project-card card h-100 border-0 shadow-sm overflow-hidden transition-all hover-shadow-lg ${
                   project.status === 'ongoing' ? 'border-start border-4 border-primary-subtle' : 'border-start border-4 border-success-subtle text-dark'

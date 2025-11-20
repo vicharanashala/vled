@@ -19,15 +19,14 @@ export const Navbar: React.FC = () => {
         <nav className="nav-bar">
           <div className="nav-links">
             <Link to="/research" className="nav-text">Research</Link>
-            <Link to="/team" className="nav-text">Team</Link>
-            <Link to="/events" className="nav-text">Events</Link>
             <Link to="/fdp" className="nav-text">FDP</Link>
-            <Link to="/careers" className="nav-text">Careers</Link>
+            <Link to="/events" className="nav-text">Events</Link>
+            <Link to="/team" className="nav-text">Team</Link>
             <Link to="/comingsoon" className="nav-text">Blog</Link>
           </div>
-          <Link to="/collaborations">
+          <Link to="/contact">
             <button className="nav-button">
-              <span className="nav-button-text">Collaborations</span>
+              <span className="nav-button-text">Contact Us</span>
             </button>
           </Link>
         </nav>
@@ -41,14 +40,13 @@ export const Navbar: React.FC = () => {
       {menuOpen && (
         <nav className="mobile-nav-dropdown">
           <Link to="/research" className="nav-text" onClick={handleNavLinkClick}>Research</Link>
-          <Link to="/team" className="nav-text" onClick={handleNavLinkClick}>Team</Link>
-          <Link to="/events" className="nav-text" onClick={handleNavLinkClick}>Events</Link>
           <Link to="/fdp" className="nav-text" onClick={handleNavLinkClick}>FDP</Link>
-          <Link to="/careers" className="nav-text" onClick={handleNavLinkClick}>Careers</Link>
+          <Link to="/events" className="nav-text" onClick={handleNavLinkClick}>Events</Link>
+          <Link to="/team" className="nav-text" onClick={handleNavLinkClick}>Team</Link>
           <Link to="/comingsoon" className="nav-text" onClick={handleNavLinkClick}>Blog</Link>
-          <Link to="/collaborations">
+          <Link to="/contact">
             <button className="nav-button">
-              <span className="nav-button-text">Collaborations</span>
+              <span className="nav-button-text">Contact Us</span>
             </button>
           </Link>
         </nav>
