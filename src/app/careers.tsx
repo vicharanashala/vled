@@ -1,119 +1,341 @@
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar } from "../components/navbar"; // Import Navbar
+import { Navbar } from "../components/navbar";
+import "../styles/careers.css";
 
 const Careers = () => {
-  const openings = [
-    {
-      title: 'Full Stack Developer Intern (Virtual)',
-      type: 'Internship',
-      location: 'Remote',
-      description:
-        'Work on cutting-edge educational platforms. Gain experience in React, Node.js, and cloud technologies.',
-      requirements: [
-        'Proficiency in JavaScript, React, and Node.js',
-        'Experience with REST APIs and databases',
-        'Strong problem-solving skills',
-      ],
-      applyLink: '/contact?tab=join',
-    },
-    {
-      title: 'Full Stack Developer Intern (Onsite)',
-      type: 'Internship',
-      location: 'IIT Ropar Campus',
-      description:
-        'Collaborate with our team onsite to develop scalable educational tools and platforms.',
-      requirements: [
-        'Proficiency in JavaScript, React, and Node.js',
-        'Experience with version control (Git)',
-        'Ability to work in a team environment',
-      ],
-      applyLink: '/contact?tab=join',
-    },
-    {
-      title: 'Research Assistant (AI in Education)',
-      type: 'Research',
-      location: 'IIT Ropar Campus',
-      description:
-        'Assist in research projects focused on AI-driven personalized learning systems.',
-      requirements: [
-        'Background in AI/ML or related fields',
-        'Experience with Python and machine learning libraries',
-        'Strong analytical and research skills',
-      ],
-      applyLink: '/contact?tab=join',
-    },
-  ];
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    phone: "",
+    location: "",
+    experience: "",
+    experienceSummary: "",
+    skills: "",
+    whyJoin: "",
+    resume: null,
+    portfolio: "",
+    linkedin: "",
+    joiningDate: "",
+    workSetup: "",
+    hearAbout: "",
+    consent: false,
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value, type } = e.target;
+    
+    if (type === 'checkbox') {
+      const target = e.target as HTMLInputElement;
+      setFormData(prev => ({ ...prev, [name]: target.checked }));
+    } else if (type === 'file') {
+      const target = e.target as HTMLInputElement;
+      setFormData(prev => ({ ...prev, [name]: target.files?.[0] || null }));
+    } else {
+      setFormData(prev => ({ ...prev, [name]: value }));
+    }
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log("Form submitted:", formData);
+    alert("Thank you for your application! We'll be in touch soon.");
+  };
 
   return (
     <div className="careers-page">
-      <Navbar /> {/* Add Navbar at the top */}
+      <Navbar />
+      
       {/* Hero Section */}
-      <section className="hero-section text-white py-5" style={{ background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)', marginTop: '-20px' }}>
-        <div className="container py-4">
-          <div className="row align-items-center">
-            <div className="col-lg-8">
-              {/* <HomeButton/> <-- Remove this line */}
-              <h1 className="display-4 text-black fw-bold mb-4 mt-4">Shape the Future of Education</h1>
-              <p className="lead mb-4 fs-4 text-secondary">
-                Join VLED and contribute to innovative educational technologies through development and research.
-              </p>
-              <Link to="/#contact">
-                <button className="btn btn-lg px-4 text-light dark-button" style= {{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)' }}>
-                  Contact Us
-                </button>
-              </Link>
+      <section className="careers-hero">
+        <div className="container">
+          <h1 className="careers-hero-title">🌟 Careers at VLED Lab</h1>
+          <p className="careers-hero-subtitle">Join us in designing the future of learning.</p>
+        </div>
+      </section>
+
+      {/* Content Section */}
+      <section className="careers-content">
+        <div className="container">
+          <div className="careers-intro">
+            <p>
+              At VLED Lab, we believe education should be clear, meaningful, and beautifully designed. 
+              Our work blends research, pedagogy, creativity, and technology to create learning experiences 
+              that truly make a difference. If you're passionate about improving education, curious about how 
+              people learn, and excited to work with a mission-driven team—this is where you belong.
+            </p>
+            <p>
+              We're always looking for innovators, educators, designers, researchers, and creators who care 
+              about making learning better for everyone.
+            </p>
+          </div>
+
+          {/* Why Work With Us Section */}
+          <div className="why-work-section">
+            <h2 className="section-title">💡 Why Work With Us?</h2>
+            <div className="benefits-grid">
+              <div className="benefit-card">
+                <h3>✨ Purpose-Driven Work</h3>
+                <p>Every project contributes directly to strengthening education and transforming learner experiences.</p>
+              </div>
+              <div className="benefit-card">
+                <h3>🤝 Collaborative Culture</h3>
+                <p>Work with a multidisciplinary team—educators, designers, technologists, researchers, creators—who learn from each other every day.</p>
+              </div>
+              <div className="benefit-card">
+                <h3>📚 Growth & Learning</h3>
+                <p>We believe in continuous learning. You'll have opportunities to experiment, research, build, and grow.</p>
+              </div>
+              <div className="benefit-card">
+                <h3>🚀 Impact at Scale</h3>
+                <p>Your work will influence students, teachers, and institutions across diverse learning environments.</p>
+              </div>
+              <div className="benefit-card">
+                <h3>🎨 Creativity Meets Research</h3>
+                <p>We combine thoughtful design with evidence-based methods—your ideas will always be backed by purpose.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Openings Section */}
-      <section id="openings" className="py-5">
+      {/* Application Form Section */}
+      <section className="careers-form-section">
         <div className="container">
-          <div className="row justify-content-center mb-5">
-            <div className="col-lg-8 text-center">
-              <h2 className="display-5 fw-bold mb-3">
-                Current Opportunities
-              </h2>
-              <p className="lead text-muted">
-                We're looking for passionate individuals to join our team
-              </p>
-            </div>
+          <div className="form-header">
+            <h2>Apply to Join Our Team</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
           </div>
 
-          <div className="row g-4">
-            {openings.map((opening, index) => (
-              <div key={index} className="col-lg-4 col-md-6">
-                <div className="card h-100 border-0 shadow-sm hover-shadow transition-all">
-                  <div className="card-body p-4">
-                    <div className="d-flex justify-content-between align-items-start mb-3">
-                      <h5 className="card-title fw-bold mb-0">{opening.title}</h5>
-                      <span className="badge bg-primary-subtle bg-opacity-10 text-dark">
-                        {opening.type}
-                      </span>
-                    </div>
-                    <div className="d-flex align-items-center text-muted mb-3">
-                      <i className="fas fa-map-marker-alt me-2"></i>
-                      <small>{opening.location}</small>
-                    </div>
-                    <p className="card-text mb-4">{opening.description}</p>
-                    <h6 className="fw-bold mb-3">Requirements:</h6>
-                    <ul className="list-unstyled mb-4">
-                      {opening.requirements.map((req, i) => (
-                        <li key={i} className="mb-2">
-                          <i className="fas fa-check-circle text-success me-2"></i>
-                          <small>{req}</small>
-                        </li>
-                      ))}
-                    </ul>
-                    <a href={opening.applyLink} className="btn btn-warning text-dark w-100">
-                      Apply Now
-                    </a>
-                  </div>
+          <form className="careers-form" onSubmit={handleSubmit}>
+            {/* Basic Details */}
+            <div className="form-section">
+              <h3 className="form-section-title">Basic Details</h3>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="fullName">Full Name <span className="required">*</span></label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    name="fullName"
+                    value={formData.fullName}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="email">Email Address <span className="required">*</span></label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
                 </div>
               </div>
-            ))}
-          </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="phone">Phone Number <span className="required">*</span></label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="location">City / Location <span className="required">*</span></label>
+                  <input
+                    type="text"
+                    id="location"
+                    name="location"
+                    value={formData.location}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Experience & Skills */}
+            <div className="form-section">
+              <h3 className="form-section-title">Experience & Skills</h3>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="experience">Years of Experience <span className="required">*</span></label>
+                  <select
+                    id="experience"
+                    name="experience"
+                    value={formData.experience}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="">Select...</option>
+                    <option value="0-1">0-1 years</option>
+                    <option value="1-3">1-3 years</option>
+                    <option value="3-5">3-5 years</option>
+                    <option value="5-10">5-10 years</option>
+                    <option value="10+">10+ years</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label htmlFor="skills">Key Skills <span className="required">*</span></label>
+                  <input
+                    type="text"
+                    id="skills"
+                    name="skills"
+                    value={formData.skills}
+                    onChange={handleChange}
+                    placeholder="e.g., React, UI/UX, Research, Python"
+                    required
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="experienceSummary">Relevant Experience Summary <span className="required">*</span></label>
+                <textarea
+                  id="experienceSummary"
+                  name="experienceSummary"
+                  value={formData.experienceSummary}
+                  onChange={handleChange}
+                  rows={4}
+                  placeholder="Briefly describe your relevant experience..."
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="whyJoin">Why do you want to join VLED Lab? <span className="required">*</span></label>
+                <textarea
+                  id="whyJoin"
+                  name="whyJoin"
+                  value={formData.whyJoin}
+                  onChange={handleChange}
+                  rows={4}
+                  placeholder="Tell us what motivates you..."
+                  required
+                />
+              </div>
+            </div>
+
+            {/* Resume Upload */}
+            <div className="form-section">
+              <h3 className="form-section-title">Resume Upload</h3>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="resume">Upload Resume (PDF/DOCX) <span className="required">*</span></label>
+                  <input
+                    type="file"
+                    id="resume"
+                    name="resume"
+                    onChange={handleChange}
+                    accept=".pdf,.doc,.docx"
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="portfolio">Upload Portfolio or Link (Optional)</label>
+                  <input
+                    type="text"
+                    id="portfolio"
+                    name="portfolio"
+                    value={formData.portfolio}
+                    onChange={handleChange}
+                    placeholder="Portfolio URL or upload file"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="linkedin">LinkedIn Profile</label>
+                <input
+                  type="url"
+                  id="linkedin"
+                  name="linkedin"
+                  value={formData.linkedin}
+                  onChange={handleChange}
+                  placeholder="https://linkedin.com/in/your-profile"
+                />
+              </div>
+            </div>
+
+            {/* Additional Information */}
+            <div className="form-section">
+              <h3 className="form-section-title">Additional Information</h3>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="joiningDate">Earliest Joining Date <span className="required">*</span></label>
+                  <input
+                    type="date"
+                    id="joiningDate"
+                    name="joiningDate"
+                    value={formData.joiningDate}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="workSetup">Preferred Work Setup <span className="required">*</span></label>
+                  <select
+                    id="workSetup"
+                    name="workSetup"
+                    value={formData.workSetup}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="">Select...</option>
+                    <option value="remote">Remote</option>
+                    <option value="hybrid">Hybrid</option>
+                    <option value="onsite">On-Site</option>
+                  </select>
+                </div>
+              </div>
+              <div className="form-group">
+                <label htmlFor="hearAbout">How did you hear about us? <span className="required">*</span></label>
+                <select
+                  id="hearAbout"
+                  name="hearAbout"
+                  value={formData.hearAbout}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Select...</option>
+                  <option value="website">VLED Website</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="referral">Referral</option>
+                  <option value="job-portal">Job Portal</option>
+                  <option value="social-media">Social Media</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            {/* Consent & Submit */}
+            <div className="form-section">
+              <div className="form-group consent-group">
+                <label className="consent-label">
+                  <input
+                    type="checkbox"
+                    name="consent"
+                    checked={formData.consent}
+                    onChange={handleChange}
+                    required
+                  />
+                  <span>
+                    I confirm that the information provided is accurate and I agree to the{" "}
+                    <Link to="/privacy" target="_blank">Privacy Policy</Link>.
+                    <span className="required"> *</span>
+                  </span>
+                </label>
+              </div>
+              <button type="submit" className="submit-button">
+                Submit Application
+              </button>
+            </div>
+          </form>
         </div>
       </section>
     </div>

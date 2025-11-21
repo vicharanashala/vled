@@ -388,12 +388,11 @@ html, body {
   }
 
   .social-link {
-    width: 32px;
-    height: 32px;
+    font-size: 13px;
   }
 
   .social-link svg {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 

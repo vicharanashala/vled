@@ -1,0 +1,489 @@
+/* Careers Page Styles */
+
+.careers-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: "Manrope", Helvetica, sans-serif;
+}
+
+/* Hero Section */
+.careers-hero {
+  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  color: white;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+.careers-hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.careers-hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  opacity: 0.95;
+}
+
+/* Content Section */
+.careers-content {
+  padding: 60px 20px;
+  background: white;
+}
+
+.careers-intro {
+  max-width: 900px;
+  margin: 0 auto 60px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #495057;
+}
+
+.careers-intro p {
+  margin-bottom: 20px;
+}
+
+/* Why Work With Us Section */
+.why-work-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(233, 103, 52);
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.benefit-card {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid rgb(233, 103, 52);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(233, 103, 52, 0.15);
+}
+
+.benefit-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #495057;
+  margin: 0;
+}
+
+/* Form Section */
+.careers-form-section {
+  padding: 60px 20px 80px;
+  background: #f8f9fa;
+}
+
+.form-header {
+  max-width: 900px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.form-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(233, 103, 52);
+  margin-bottom: 15px;
+}
+
+.form-header p {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+/* Form Styles */
+.careers-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-section {
+  margin-bottom: 45px;
+  padding-bottom: 45px;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.form-section-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: rgb(233, 103, 52);
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgb(233, 103, 52);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+}
+
+.required {
+  color: #e74c3c;
+  font-weight: 700;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #495057;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(233, 103, 52);
+  box-shadow: 0 0 0 3px rgba(233, 103, 52, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group input[type="file"] {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Consent Group */
+.consent-group {
+  margin-bottom: 30px;
+}
+
+.consent-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.consent-label input[type="checkbox"] {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: rgb(233, 103, 52);
+}
+
+.consent-label span {
+  flex: 1;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.consent-label a {
+  color: rgb(233, 103, 52);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.consent-label a:hover {
+  text-decoration: underline;
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  padding: 16px 32px;
+  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 103, 52, 0.3);
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 103, 52, 0.4);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}
+
+/* Zoho Recruit Styles */
+
+/* Option 1: Link Button Styles */
+.zoho-link-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.zoho-description {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.zoho-apply-button {
+  display: inline-block;
+  padding: 18px 40px;
+  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(233, 103, 52, 0.3);
+}
+
+.zoho-apply-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(233, 103, 52, 0.4);
+  color: white;
+}
+
+/* Option 2: Iframe Embed Styles */
+.zoho-embed-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.zoho-iframe {
+  width: 100%;
+  min-height: 800px;
+  height: auto;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Responsive Zoho Styles */
+@media (max-width: 768px) {
+  .zoho-link-section,
+  .zoho-embed-container {
+    padding: 30px 20px;
+  }
+
+  .zoho-description {
+    font-size: 1rem;
+  }
+
+  .zoho-apply-button {
+    font-size: 1.1rem;
+    padding: 14px 32px;
+  }
+
+  .zoho-iframe {
+    min-height: 600px;
+  }
+}
+
+@media (max-width: 480px) {
+  .zoho-link-section,
+  .zoho-embed-container {
+    padding: 25px 15px;
+  }
+
+  .zoho-description {
+    font-size: 0.95rem;
+  }
+
+  .zoho-apply-button {
+    font-size: 1rem;
+    padding: 12px 28px;
+  }
+
+  .zoho-iframe {
+    min-height: 500px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .careers-hero {
+    padding: 80px 20px 50px;
+  }
+
+  .careers-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .careers-hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .careers-content {
+    padding: 40px 20px;
+  }
+
+  .careers-intro {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .benefit-card {
+    padding: 25px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .careers-form-section {
+    padding: 40px 15px 60px;
+  }
+
+  .form-header h2 {
+    font-size: 2rem;
+  }
+
+  .form-header p {
+    font-size: 1rem;
+  }
+
+  .careers-form {
+    padding: 30px 20px;
+  }
+
+  .form-section-title {
+    font-size: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+
+  .form-section {
+    margin-bottom: 35px;
+    padding-bottom: 35px;
+  }
+
+  .submit-button {
+    font-size: 1.1rem;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .careers-hero-title {
+    font-size: 1.8rem;
+  }
+
+  .careers-hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .benefit-card {
+    padding: 20px;
+  }
+
+  .benefit-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .benefit-card p {
+    font-size: 0.95rem;
+  }
+
+  .careers-form {
+    padding: 25px 15px;
+  }
+
+  .form-section-title {
+    font-size: 1.3rem;
+  }
+
+  .form-group label {
+    font-size: 0.95rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 12px 24px;
+  }
+}
