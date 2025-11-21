@@ -93,31 +93,147 @@ const Events = () => {
     <div className="events-page">
       <Navbar />
       {/* Hero Section  */}
-      <section className="hero-section text-white py-6" style={{ background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)' }}>
+      <section className="hero-section py-6" style={{ background: 'linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%)' }}>
         <div className="container position-relative py-5">
-          <h1 className="display-4 text-black fw-bold mb-4 mt-4">Events at VLED</h1>
-          <p className="lead mb-4 fs-4 text-secondary">
-            Join our knowledge-sharing community
-          </p>
-          <div>
-            {/*}
-            <button className="btn btn-lg px-4 text-light dark-button" style={{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)', marginRight: '20px'}} >
-              Subscribe to Updates
-            </button>
-            */}
-            
-            {/* <button className="btn btn-lg px-4 light-button" style ={{ borderWidth: '1.3px', borderColor: 'rgb(233, 103, 52)', color: 'rgb(233, 103, 52)' }} >Past Events Archive</button> */}
+          <div className="row align-items-center">
+            <div className="col-lg-8">
+              <h1 className="display-3 text-white fw-bold mb-4 mt-4">Events at VLED Lab</h1>
+              <p className="lead mb-3 fs-3 text-white fw-semibold">
+                Where Research, Innovation, and Educator Development Come Alive
+              </p>
+              <p className="fs-5 text-white mb-5" style={{ lineHeight: '1.8' }}>
+                At VLED Lab, every event is designed to move education forward. We regularly bring together educators, researchers, designers, and innovators to explore new possibilities in learning. Our workshops, FDPs, and interactive sessions focus on strengthening teaching practices, deepening academic design, and integrating research-backed methods into classrooms.
+              </p>
+              <Link to="#upcoming">
+                <button className="btn btn-light btn-lg px-5 py-3 fw-bold" style={{ borderRadius: '50px' }}>
+                  Learn More <i className="fas fa-arrow-down ms-2"></i>
+                </button>
+              </Link>
+            </div>
+            <div className="col-lg-4 d-none d-lg-block">
+              <div className="text-center">
+                <i className="fas fa-calendar-check" style={{ fontSize: '12rem', color: 'rgba(255, 255, 255, 0.2)' }}></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What We Focus On Section */}
+      <section id="upcoming" className="py-6 bg-white">
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="display-5 fw-bold mb-4" style={{ color: 'rgb(233, 103, 52)' }}>
+              Stay Tuned for Upcoming Events
+            </h2>
+            <p className="lead text-secondary mx-auto" style={{ maxWidth: '900px' }}>
+              Events that reflect our commitment to advancing education
+            </p>
+          </div>
+
+          <div className="row g-4 justify-content-center">
+            {/* Focus Area 1 */}
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 shadow-sm h-100 hover-card" style={{ transition: 'transform 0.3s' }}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-4">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
+                      <i className="fas fa-microscope fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3">Advancing Educational Research</h4>
+                  <p className="text-secondary mb-0">
+                    Through discussions, deep dives, and collaborative studies
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Focus Area 2 */}
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 shadow-sm h-100 hover-card" style={{ transition: 'transform 0.3s' }}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-4">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
+                      <i className="fas fa-chalkboard-teacher fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3">Empowering Educators</h4>
+                  <p className="text-secondary mb-0">
+                    With meaningful Faculty Development Programs (FDPs) rooted in real classroom needs
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Focus Area 3 */}
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 shadow-sm h-100 hover-card" style={{ transition: 'transform 0.3s' }}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-4">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
+                      <i className="fas fa-tools fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3">Sharing New Learnings</h4>
+                  <p className="text-secondary mb-0">
+                    Tools and frameworks that improve the way education is designed and delivered
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Focus Area 4 */}
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 shadow-sm h-100 hover-card" style={{ transition: 'transform 0.3s' }}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-4">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
+                      <i className="fas fa-users fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3">Building Community</h4>
+                  <p className="text-secondary mb-0">
+                    A network of curious, forward-thinking education professionals
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Focus Area 5 */}
+            <div className="col-lg-4 col-md-6">
+              <div className="card border-0 shadow-sm h-100 hover-card" style={{ transition: 'transform 0.3s' }}>
+                <div className="card-body p-4 text-center">
+                  <div className="mb-4">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
+                      <i className="fas fa-rocket fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                    </div>
+                  </div>
+                  <h4 className="fw-bold mb-3">Showcasing Innovations</h4>
+                  <p className="text-secondary mb-0">
+                    Launches and transformative learning ideas
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </section>
 
       {/* Events Section */}
-      <section className="py-5 bg-light">
+      <section className="py-6 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Discover Our Events</h2>
+            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgb(233, 103, 52)' }}>Our Events</h2>
             <p className="lead text-muted max-w-800 mx-auto">
-              Workshops, hackathons, and symposiums designed to inspire and educate
+              Explore our past events and stay tuned for upcoming opportunities
             </p>
             
             {/* Event Type Tabs */}
@@ -234,8 +350,14 @@ const Events = () => {
                 ))
               ) : (
                 <div className="col-12 text-center py-5">
-                  <div className="alert alert-info">
-                    No {activeTab} events currently. Check back soon!
+                  <div className="p-5 rounded-4 shadow-sm bg-white">
+                    <i className="fas fa-calendar-times fs-1 mb-4" style={{ color: 'rgb(233, 103, 52)', opacity: '0.5' }}></i>
+                    <h3 className="fw-bold mb-3">No {activeTab === 'upcoming' ? 'Upcoming' : 'Past'} Events</h3>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1.1rem' }}>
+                      {activeTab === 'upcoming' 
+                        ? 'We are currently planning exciting new events. Stay tuned for updates!' 
+                        : 'Check back later for our event archive.'}
+                    </p>
                   </div>
                 </div>
               )}

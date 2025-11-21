@@ -1,19 +1,26 @@
 import { FDPNavbar } from '../components/FDPNavbar';
 import '../styles/fdp.css';
+import { useState } from 'react';
 
 const FDPFAQ = () => {
+  const [openAccordion, setOpenAccordion] = useState<string>('faq1');
+
+  const toggleAccordion = (id: string) => {
+    setOpenAccordion(openAccordion === id ? '' : id);
+  };
+
   return (
     <div className="fdp-page">
       <FDPNavbar activePage="faq" />
       
-      {/* Header Section */}
-      <section className="fdp-hero fdp-sub-hero">
+      {/* Hero Section */}
+      <section className="fdp-hero" style={{ minHeight: '40vh' }}>
         <div className="container">
-          <div className="row align-items-center justify-content-center text-center">
-            <div className="col-lg-8">
-              <h1 className="fdp-hero-title">Frequently Asked Questions</h1>
+          <div className="row align-items-center" style={{ minHeight: '40vh' }}>
+            <div className="col-lg-12 text-center">
+              <h1 className="fdp-hero-title">FDP FAQ</h1>
               <p className="fdp-hero-subtitle">
-                Find answers to common questions about the FDP program
+                Frequently Asked Questions about the Faculty Development Program
               </p>
             </div>
           </div>
@@ -25,168 +32,495 @@ const FDPFAQ = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-10 mx-auto">
-              <div className="accordion" id="fdpFAQ">
+              
+              {/* General Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">General</h2>
+                <div className="accordion" id="fdpFAQGeneral">
                 
-                {/* FAQ 1 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                      Who can apply for this FDP program?
-                    </button>
-                  </h2>
-                  <div id="faq1" className="accordion-collapse collapse show" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      This program is designed for degree college faculty members, academic administrators, 
-                      and educational researchers. Participants should have basic computer literacy and 
-                      a willingness to explore AI technologies in education.
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'faq1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('faq1')}
+                      >
+                        What is the structure of this Faculty Development Program (FDP)?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'faq1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        The FDP is designed as a blended learning Program, combining live support sessions with self-paced modules on ViBe - an AI Powered Learning Platform.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 2 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                      What is the duration of the program?
-                    </button>
-                  </h2>
-                  <div id="faq2" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      The FDP spans 7 weeks with a structured curriculum covering AI fundamentals, 
-                      practical applications, pedagogical integration, and assessment. Sessions are 
-                      conducted both online and in hybrid formats.
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'faq2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('faq2')}
+                      >
+                        What are the Key Highlights of this FDP?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'faq2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        <ul className="fdp-list">
+                          <li>No Attendance</li>
+                          <li>Flexible and Self-Paced</li>
+                          <li>Engaging Quizzes</li>
+                          <li>Interactive Support Sessions</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 3 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                      Do I need prior experience with AI or programming?
-                    </button>
-                  </h2>
-                  <div id="faq3" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      No prior AI or programming experience is required. The program is designed to start 
-                      from fundamentals and gradually build expertise. However, basic computer skills 
-                      and familiarity with educational technology tools will be helpful.
+                  {/* FAQ 3 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'faq3' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('faq3')}
+                      >
+                        Will there be any live sessions for FDPs?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'faq3' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        No. It is self-paced learning. There will be occasional live support sessions to assist the queries of participants.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 4 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                      What are the technical requirements?
-                    </button>
-                  </h2>
-                  <div id="faq4" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Participants need a computer/laptop with stable internet connection, updated web browser, 
-                      and basic software installation capabilities. Specific AI tools and platforms will be 
-                      provided as part of the program resources.
+                  {/* FAQ 4 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'faq4' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('faq4')}
+                      >
+                        How much time should I dedicate per week?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'faq4' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Since the program is self-paced, you can manage your own schedule. You can complete the FDP smoothly before the deadline.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 5 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
-                      Is there a certification upon completion?
-                    </button>
-                  </h2>
-                  <div id="faq5" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Yes, participants who successfully complete all program requirements, including assignments, 
-                      projects, and assessments, will receive a certificate from VLED Lab, IIT Ropar, 
-                      in collaboration with MMTTP.
+                </div>
+              </div>
+
+              {/* Registration Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">Registration</h2>
+                <div className="accordion" id="fdpFAQRegistration">
+
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'reg1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('reg1')}
+                      >
+                        How do I register for the FDP?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'reg1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        <p>Visit the official website: <a href="https://fdp.vicharanashala.ai/" target="_blank" rel="noopener noreferrer">https://fdp.vicharanashala.ai/</a></p>
+                        <ul className="fdp-list">
+                          <li>You will see the registration links for two FDPs: GuruSetu and CBPAI.</li>
+                          <li>Click on the desired FDP link to open the Google Form and complete your registration.</li>
+                          <li>After registration, you will receive a welcome mail from "mmttp@iitrpr.ac.in" and an invitation link on your registered email ID from "vicharanashala@gmail.com".</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 6 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
-                      What is the program fee?
-                    </button>
-                  </h2>
-                  <div id="faq6" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      This FDP is funded by the Malaviya Mission Teacher Training Programme (MMTTP) 
-                      and is provided free of cost to eligible participants. All learning materials, 
-                      tools access, and certification are included.
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'reg2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('reg2')}
+                      >
+                        Will there be any fees to join FDP?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'reg2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        No. You can register for FDPs completely free of cost and enjoy the learning.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 7 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7">
-                      How do I apply for the program?
-                    </button>
-                  </h2>
-                  <div id="faq7" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Click on the "Apply Now" button and fill out the registration form with your academic 
-                      details, teaching experience, and motivation for joining the program. Applications 
-                      are reviewed on a rolling basis with limited seats available.
+                  {/* FAQ 3 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'reg3' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('reg3')}
+                      >
+                        What if I miss registration immediately on ViBe?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'reg3' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Invitation links sent to your registered email ID usually remain active, but it's recommended to register as soon as possible.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 8 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8">
-                      What support is available during the program?
-                    </button>
-                  </h2>
-                  <div id="faq8" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Participants receive comprehensive support including dedicated mentors, peer learning groups, 
-                      technical helpdesk, resource library access, and ongoing guidance from subject matter experts. 
-                      Regular Q&A sessions and discussion forums are also available.
+                  {/* FAQ 4 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'reg4' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('reg4')}
+                      >
+                        Can I register for more than one FDP?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'reg4' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Yes. Participants can register for multiple FDPs if they wish and enjoy the learning.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 9 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9">
-                      Can I continue working while attending the program?
-                    </button>
-                  </h2>
-                  <div id="faq9" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Yes, the program is designed to accommodate working professionals. Sessions are scheduled 
-                      to minimize disruption to regular teaching duties, with flexible timing options and 
-                      recorded sessions available for later review.
+                </div>
+              </div>
+
+              {/* Support/Help & Attendance Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">Support/Help & Attendance</h2>
+                <div className="accordion" id="fdpFAQSupport">
+
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'support1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('support1')}
+                      >
+                        Is there any attendance criteria?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'support1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Participants are not required to follow any attendance criteria or formalities. The program is fully self-paced, allowing participants to join at any time, learn at their own pace, and complete the assignments before the deadline mentioned in the welcome mail.
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                {/* FAQ 10 */}
-                <div className="accordion-item mb-3">
-                  <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">
-                      What happens after program completion?
-                    </button>
-                  </h2>
-                  <div id="faq10" className="accordion-collapse collapse" data-bs-parent="#fdpFAQ">
-                    <div className="accordion-body">
-                      Graduates join an alumni network for continued learning and collaboration. We provide 
-                      ongoing resources, updates on new AI developments in education, and opportunities 
-                      to participate in follow-up workshops and research projects.
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'support2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('support2')}
+                      >
+                        Will there be post-FDP support?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'support2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Yes. Participants will get helpdesk support for a limited period after the FDP.
+                      </div>
                     </div>
                   </div>
-                </div>
 
+                  {/* FAQ 3 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'support3' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('support3')}
+                      >
+                        Do I need to attend live sessions?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'support3' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        No. The FDPs are fully self-paced. You can access all the content on ViBe anytime, according to your convenience. Support sessions are optional and help you clarify your doubts.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 4 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'support4' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('support4')}
+                      >
+                        To whom can I contact if I have any query regarding content or modules?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'support4' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        You can share your issue with the support desk team with complete details like screenshots or screen recordings.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 5 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'support5' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('support5')}
+                      >
+                        I didn't receive the invitation link. What should I do?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'support5' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        First, check your spam or junk folder if you have received an email from Vicharanashala. If you still don't see it, raise a support request through the form or email the support team at <a href="mailto:vibe-support@vicharanashala.zohodesk.in">vibe-support@vicharanashala.zohodesk.in</a>.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* Certificate Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">Certificate</h2>
+                <div className="accordion" id="fdpFAQCertificate">
+
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'cert1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('cert1')}
+                      >
+                        Is this FDP certified?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'cert1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Yes. Participants who complete all required sessions, submit assignments, and meet the engagement criteria will receive a UGC-approved FDP certificate.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'cert2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('cert2')}
+                      >
+                        How will I get my certificate?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'cert2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Certificates are issued only when the course is complete and there is 100% progress in videos, quizzes, assignments, polls, and project work.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 3 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'cert3' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('cert3')}
+                      >
+                        Can we submit assignments and get certificates without watching videos?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'cert3' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        No. Video completion is monitored and required for assignment submission and certification.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 4 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'cert4' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('cert4')}
+                      >
+                        What if some details are misspelled on the certificate?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'cert4' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Contact the support team at <a href="mailto:support-cbpai@vicharanashala.zohodesk.in">support-cbpai@vicharanashala.zohodesk.in</a> immediately to correct any errors. Corrections may take a few days depending on the verification process.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 5 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'cert5' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('cert5')}
+                      >
+                        How long does it take to receive the certificate?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'cert5' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Certificates are generally issued within one or two weeks of the program deadline.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* FDP Content Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">FDP Content</h2>
+                <div className="accordion" id="fdpFAQContent">
+
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'content1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('content1')}
+                      >
+                        Till when can I complete the course videos?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'content1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        You need to complete all video modules by the deadline along with quizzes and projects.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'content2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('content2')}
+                      >
+                        Will there be any project at the end of the FDP?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'content2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Yes. The final project is an implementation of your learning from the FDP, whether it's a pedagogy, tool, or any key takeaway that you've applied directly in your classroom. Submission of this project is required to receive the certificate.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 3 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'content3' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('content3')}
+                      >
+                        Does the order in which you finish the Modules matter?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'content3' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        Yes. You are required to finish the modules in proper order within the programme duration.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 4 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'content4' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('content4')}
+                      >
+                        Can I download the content for offline use?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'content4' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        No. Downloading is generally not allowed. You can only access the content through ViBe to ensure your progress is tracked for completion and certification.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* MEME Section */}
+              <div className="mb-5">
+                <h2 className="fdp-section-title mb-4">MEME (Multiple Entry Multiple Exit)</h2>
+                <div className="accordion" id="fdpFAQMEME">
+
+                  {/* FAQ 1 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'meme1' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('meme1')}
+                      >
+                        What is the MEME (Multiple Entry Multiple Exit) policy?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'meme1' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        It is a policy that has been made to ensure that people can attend the programme without worries of busy schedules. Within the entire programme, you can attend and complete the respective and distinct modules anytime before the deadline.
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* FAQ 2 */}
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header">
+                      <button 
+                        className={`accordion-button ${openAccordion !== 'meme2' ? 'collapsed' : ''}`}
+                        type="button" 
+                        onClick={() => toggleAccordion('meme2')}
+                      >
+                        How does it work?
+                      </button>
+                    </h2>
+                    <div className={`accordion-collapse collapse ${openAccordion === 'meme2' ? 'show' : ''}`}>
+                      <div className="accordion-body">
+                        MEME (Multiple Entry, Multiple Exit) allows participants to join and leave a program at any time without affecting their progress. However, in ViBe, you must follow the modules in order. You cannot skip sections, and progress must be completed sequentially.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
 
             </div>

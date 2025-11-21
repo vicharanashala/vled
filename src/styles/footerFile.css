@@ -88,32 +88,34 @@ html, body {
 
 .footer-social {
   display: flex;
-  gap: 15px;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .social-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(44, 62, 80, 0.1);
-  border-radius: 50%;
+  gap: 8px;
   color: #2c3e50;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid rgba(44, 62, 80, 0.2);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 6px 0;
 }
 
 .social-link:hover {
-  background: #e96734;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(233, 103, 52, 0.3);
+  color: #e96734;
+  transform: translateX(5px);
 }
 
 .social-link svg {
-  font-size: 16px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover svg {
+  transform: scale(1.15);
 }
 
 /* Footer Links */

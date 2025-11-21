@@ -97,6 +97,42 @@
   color: #FFD700 !important;
 }
 
+/* FAQ Dropdown Menu */
+.fdp-nav-menu .nav-item.dropdown {
+  position: relative;
+}
+
+.fdp-nav-menu .dropdown-toggle::after {
+  margin-left: 0.3rem;
+}
+
+.fdp-nav-menu .dropdown-menu {
+  background-color: rgba(139, 69, 19, 0.95);
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  min-width: 180px;
+}
+
+.fdp-nav-menu .dropdown-item {
+  color: white !important;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.fdp-nav-menu .dropdown-item:hover {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: #FFD700 !important;
+}
+
+.fdp-nav-menu .dropdown-item:active {
+  background-color: rgba(255, 215, 0, 0.3);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -552,4 +588,24 @@
   .fdp-header-info .contact-info span {
     font-size: 0.75rem;
   }
+}
+
+/* Additional FDP Styles */
+.fdp-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.fdp-list li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.fdp-list li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: rgb(233, 103, 52);
+  font-weight: bold;
 }

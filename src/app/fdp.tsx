@@ -57,10 +57,10 @@ const FDP = () => {
           <div className="row align-items-center min-vh-100">
             <div className="col-lg-6">
               <h1 className="fdp-hero-title">
-                Faculty Development Program on AI
+                Faculty Development Program
               </h1>
               <p className="fdp-hero-subtitle">
-                Empowering Degree College Teachers to integrate AI into Teaching, Research, and Academic Administration.
+                Empowering Educators. Transforming Learning.
               </p>
               <button className="btn fdp-register-btn">
                 REGISTER NOW
@@ -73,87 +73,236 @@ const FDP = () => {
         </div>
       </section>
 
-      {/* Objectives Section */}
+      {/* Program Overview Section */}
       <section className="fdp-objectives py-5">
         <div className="container">
           <div className="row">
             <div className="col-12 text-center mb-5">
-              <h2 className="fdp-section-title">Objectives of FDP</h2>
+              <h2 className="fdp-section-title">Program Overview</h2>
             </div>
           </div>
           <div className="row">
             <div className="col-12 text-center mb-4">
               <p className="fdp-description">
-                This <strong>Faculty Development Program (FDP)</strong> is designed to equip educators with foundational AI knowledge, practical applications, and pedagogical strategies to integrate AI into teaching, research, and academic administration.
+                The <strong>Faculty Development Program (FDP)</strong> is a comprehensive initiative designed to support degree college educators in enhancing their teaching practices, strengthening academic design, and adopting innovative and research-backed approaches.
               </p>
               <p className="fdp-description">
-                We are excited to share that two enriching Faculty Development Programs (FDPs) are currently underway, offering educators opportunities to upskill and reimagine teaching practices.
+                The program focuses on evolving pedagogy, instructional design, assessment methods, and holistic teaching strategies that create meaningful learning experiences.
               </p>
             </div>
           </div>
 
-          {/* Current FDPs */}
+          {/* Mission */}
           <div className="row mt-5">
             <div className="col-12 text-center mb-4">
-              <h3 className="fdp-subsection-title">Currently Running FDPs</h3>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-12 text-center">
-              <p className="fdp-program-item">
-                <strong>CBPAI FDP</strong> – Transforming teaching with interactive and data-driven learning (AI fundamentals, applications, pedagogy).
-              </p>
-              <p className="fdp-program-item">
-                <strong>Gurusetu FDP (Pilot)</strong> – Exploring generic thematic pillars for innovative teaching practices.
-              </p>
-              <p className="fdp-highlight">
-                *Participants can enroll in either one or both FDPs. Start When You Want, Finish Before the Deadline!
+              <h3 className="fdp-subsection-title">Our Mission</h3>
+              <p className="fdp-description">
+                To elevate the quality of higher education by equipping educators with modern teaching frameworks, reflective practices, and evidence-based methodologies that improve learner engagement, clarity, and outcomes.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Program Benefits Section */}
       <section className="fdp-features py-5">
         <div className="container">
           <div className="row mb-5">
             <div className="col-12 text-center">
-              <h2 className="fdp-section-title">Faculty Development Program on AI</h2>
+              <h2 className="fdp-section-title">Program Benefits</h2>
+              <p className="fdp-description">Participants will receive:</p>
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-3 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
               <div className="fdp-feature-card text-center">
                 <div className="fdp-feature-icon">
-                  <i className="fas fa-laptop-code"></i>
+                  <i className="fas fa-chalkboard-teacher"></i>
                 </div>
-                <h4 className="fdp-feature-title">Practical Application of AI in Education</h4>
+                <h4 className="fdp-feature-title">Hands-on training in contemporary teaching methods and content design</h4>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
               <div className="fdp-feature-card text-center">
                 <div className="fdp-feature-icon brain-icon">
-                  <i className="fas fa-brain"></i>
+                  <i className="fas fa-lightbulb"></i>
                 </div>
-                <h4 className="fdp-feature-title">Mastery of AI-Driven Pedagogical Strategies</h4>
+                <h4 className="fdp-feature-title">Exposure to modern pedagogical frameworks and classroom innovation</h4>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
               <div className="fdp-feature-card text-center">
                 <div className="fdp-feature-icon hand-icon">
-                  <i className="fas fa-hands-helping"></i>
+                  <i className="fas fa-tools"></i>
                 </div>
-                <h4 className="fdp-feature-title">Empowerment through Hands-On AI Experience</h4>
+                <h4 className="fdp-feature-title">Tools for enhancing student engagement and learning outcomes</h4>
               </div>
             </div>
-            <div className="col-lg-3 col-md-6 mb-4">
+            <div className="col-lg-4 col-md-6 mb-4">
               <div className="fdp-feature-card text-center">
                 <div className="fdp-feature-icon people-icon">
                   <i className="fas fa-users"></i>
                 </div>
-                <h4 className="fdp-feature-title">Cultivation of a Collaborative Network of AI-Enabled Educators</h4>
+                <h4 className="fdp-feature-title">Collaborative learning spaces with peer educators across institutions</h4>
               </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="fdp-feature-card text-center">
+                <div className="fdp-feature-icon">
+                  <i className="fas fa-certificate"></i>
+                </div>
+                <h4 className="fdp-feature-title">Certification upon successful completion</h4>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4">
+              <div className="fdp-feature-card text-center">
+                <div className="fdp-feature-icon">
+                  <i className="fas fa-book-open"></i>
+                </div>
+                <h4 className="fdp-feature-title">Continuous access to curated teaching resources and guidance</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Application Section */}
+      <section className="fdp-application py-5">
+        <div className="container text-center">
+          <h2 className="fdp-section-title mb-4">Take the Next Step</h2>
+          <p className="fdp-description mb-4">
+            Take a step toward transforming your classroom and your teaching approach.<br/>
+            Enhance your skills, deepen your impact, and join a community dedicated to elevating education.
+          </p>
+          <h3 className="fdp-app-title mb-4">How to Apply: Fill out the registration form linked below.<br/>Seats are limited — apply early!</h3>
+          <a href="https://mmc.ugc.ac.in/registration/Index" target="_blank" rel="noopener noreferrer" className="btn fdp-register-btn">Apply Now</a>
+        </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section className="fdp-objectives py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center mb-4">
+              <h2 className="fdp-section-title">Target Audience</h2>
+              <p className="fdp-description">This FDP is ideal for:</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <ul className="fdp-list">
+                <li>Degree college faculty</li>
+                <li>Academic leaders and administrators</li>
+                <li>Educational researchers</li>
+                <li>Educators seeking to upgrade their teaching and redesign learning experiences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Objectives Section */}
+      <section className="fdp-objectives py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center mb-4">
+              <h2 className="fdp-section-title">Objectives of the FDP</h2>
+              <p className="fdp-description">This program is designed to enable educators to:</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <ul className="fdp-list">
+                <li>Strengthen pedagogy and curriculum design skills</li>
+                <li>Apply research-backed teaching strategies</li>
+                <li>Integrate innovative content presentation and assessment methods</li>
+                <li>Use reflective practices to enhance classroom delivery</li>
+                <li>Improve learning experiences across disciplines</li>
+                <li>Build a supportive community of progressive educators</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Currently Running FDPs Section */}
+      <section className="fdp-objectives py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center mb-5">
+              <h2 className="fdp-section-title">Currently Running FDPs</h2>
+              <p className="fdp-description">
+                We are pleased to share two active FDPs that support educators in reimagining teaching practices:
+              </p>
+            </div>
+          </div>
+          
+          <div className="row justify-content-center">
+            <div className="col-lg-5 col-md-6 mb-4">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h3 className="fdp-subsection-title">1. CBPAI FDP</h3>
+                  <p className="fdp-description">
+                    A program focused on interactive, learner-centred, and data-informed teaching practices.
+                  </p>
+                  <h5 className="mt-3 mb-2"><strong>Key Themes:</strong></h5>
+                  <ul className="fdp-list">
+                    <li>Pedagogical clarity</li>
+                    <li>Content structuring & design</li>
+                    <li>Student engagement strategies</li>
+                    <li>Evaluating learning effectively</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-lg-5 col-md-6 mb-4">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body">
+                  <h3 className="fdp-subsection-title">2. Gurusetu FDP (Pilot)</h3>
+                  <p className="fdp-description">
+                    An exploration of thematic pillars that inspire reflective, meaningful, and innovative teaching.
+                  </p>
+                  <h5 className="mt-3 mb-2"><strong>Key Themes:</strong></h5>
+                  <ul className="fdp-list">
+                    <li>Holistic teaching approaches</li>
+                    <li>Curriculum & content refinement</li>
+                    <li>Designing better learning journeys</li>
+                    <li>Educator mindsets & classroom culture</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="row mt-4">
+            <div className="col-12 text-center">
+              <p className="fdp-highlight">
+                <strong>Participants can join one or both programs.</strong><br/>
+                Flexible timelines — start anytime, finish before the deadline!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Learning Outcomes Section */}
+      <section className="fdp-objectives py-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center mb-4">
+              <h2 className="fdp-section-title">Learning Outcomes</h2>
+              <p className="fdp-description">By the end of the program, participants will be able to:</p>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-lg-8">
+              <ul className="fdp-list">
+                <li>Design clearer, more learner-friendly teaching materials</li>
+                <li>Apply innovative pedagogical strategies with confidence</li>
+                <li>Build structured, engaging, and outcome-focused lessons</li>
+                <li>Approach teaching with a research-oriented, reflective mindset</li>
+                <li>Collaborate with a growing network of educators committed to improving education</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -176,35 +325,18 @@ const FDP = () => {
         </div>
       </section>
 
-      {/* Video Call Section */}
-      <section className="fdp-video-section py-5">
-        <div className="fdp-video-overlay">
-          <div className="container text-center">
-            <h2 className="fdp-video-title">Don't wait, upgrade your skills the smarter way!</h2>
-          </div>
-        </div>
-      </section>
-
-      {/* Application Section */}
-      <section className="fdp-application py-5">
-        <div className="container text-center">
-          <h3 className="fdp-app-title mb-4">How to Apply: Fill out the registration form linked below. Limited seats available, so apply soon!</h3>
-          <a href="https://mmc.ugc.ac.in/registration/Index" target="_blank" rel="noopener noreferrer" className="btn fdp-register-btn">Apply Now</a>
-        </div>
-      </section>
-
       {/* MMTTP Sponsor Section */}
       <section className="fdp-sponsor py-5">
         <div className="container text-center">
           <h2 className="fdp-sponsor-title">About MMTTP (Sponsor)</h2>
           <p className="fdp-sponsor-description">
-            The <strong>Malaviya Mission Teacher Training Programme (MMTTP)</strong> aims to elevate educational standards by sponsoring and supporting innovative teacher training initiatives. This <strong>FDP on AI</strong> is funded by MMTTP to empower educators with cutting-edge knowledge and skills.
+            The <strong>Malaviya Mission Teacher Training Programme (MMTTP)</strong> financially supports innovative teacher training initiatives across India. This FDP is sponsored by MMTTP to empower educators with modern teaching strategies, promote excellence in higher education, and strengthen professional development at scale.
           </p>
         </div>
       </section>
 
       {/* Certificate Verification Section */}
-      <section className="fdp-verification py-5">
+      <section id="certificate" className="fdp-verification py-5">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
@@ -275,7 +407,7 @@ const FDP = () => {
             <div className="col-lg-3">
               <div className="fdp-footer-logo">
                 <h2 className="mb-3">FDP<span className="highlight">2025</span></h2>
-                <p className="fdp-footer-subtitle">(FDP) Faculty Development Program on AI in Education</p>
+                <p className="fdp-footer-subtitle">Faculty Development Program</p>
               </div>
             </div>
             <div className="col-lg-3">
@@ -284,19 +416,20 @@ const FDP = () => {
             <div className="col-lg-3">
               <h5 className="fdp-footer-title">Main Focus of the FDP:</h5>
               <p className="fdp-footer-text">
-                The main focus of the Faculty Development Program (FDP) is to bring together educators, researchers, and academic leaders to build AI literacy and explore the integration of Artificial Intelligence in teaching, research, and academic administration.
+                The main focus of the Faculty Development Program (FDP) is to support degree college educators in enhancing their teaching practices, strengthening academic design, and adopting innovative and research-backed approaches to create meaningful learning experiences.
               </p>
             </div>
             <div className="col-lg-3">
-              <h5 className="fdp-footer-title">Themes:</h5>
+              <h5 className="fdp-footer-title">Key Themes:</h5>
               <ul className="fdp-themes-list">
-                <li>- AI Foundations in Education</li>
-                <li>- Personalized Learning & Assessment with AI</li>
-                <li>- AI-Driven Research and Data Analysis</li>
-                <li>- Smart Academic Administration</li>
-                <li>- Ethics & Responsible AI Use</li>
-                <li>- Future Trends in AI for Education</li>
-                <li>- Building AI-Enabled Educator Communities</li>
+                <li>- Pedagogical clarity</li>
+                <li>- Content structuring & design</li>
+                <li>- Student engagement strategies</li>
+                <li>- Evaluating learning effectively</li>
+                <li>- Holistic teaching approaches</li>
+                <li>- Curriculum & content refinement</li>
+                <li>- Designing better learning journeys</li>
+                <li>- Educator mindsets & classroom culture</li>
               </ul>
               
               <div className="fdp-contact-info mt-4">

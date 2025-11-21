@@ -1,6 +1,6 @@
 import "../styles/footerFile.css";
 import { Link } from 'react-router-dom';
-import { FaLinkedin, FaYoutube, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaGithub } from 'react-icons/fa';
 import logo from '../assets/vled-logo.png';
 
 export const FooterWrapper = () => {
@@ -22,26 +22,6 @@ export const FooterWrapper = () => {
               The Vicharanashala Lab for Education of Design (VLED) at IIT Ropar is pioneering 
               transformative approaches to learning in the digital age.
             </p>
-            <div className="footer-social">
-              <a
-              href="https://www.linkedin.com/company/educationdesignlab/posts/?feedView=all"
-              className="social-link"
-              aria-label="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              <FaLinkedin />
-              </a>
-              <a
-              href="https://youtube.com/@vledlabs?si=zFC1fmeqjkFCRY8Y"
-              className="social-link"
-              aria-label="YouTube"
-              target="_blank"
-              rel="noopener noreferrer"
-              >
-              <FaYoutube />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -62,6 +42,8 @@ export const FooterWrapper = () => {
             <ul className="footer-links">
               <li><Link to="/comingsoon">Blogs</Link></li>
               <li><Link to="/careers">Careers</Link></li>
+              <li><Link to="/privacy">Privacy Policy</Link></li>
+              <li><Link to="/terms">Terms & Conditions</Link></li>
             </ul>
           </div>
 
@@ -86,16 +68,46 @@ export const FooterWrapper = () => {
             </div>
           </div>
 
+          {/* Social Handles */}
+          <div className="footer-section">
+            <h3>Follow Us</h3>
+            <div className="footer-social">
+              <a
+                href="https://www.linkedin.com/company/educationdesignlab/posts/?feedView=all"
+                className="social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaLinkedin /> LinkedIn
+              </a>
+              <a
+                href="https://youtube.com/@vledlabs?si=zFC1fmeqjkFCRY8Y"
+                className="social-link"
+                aria-label="YouTube"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaYoutube /> YouTube
+              </a>
+              <a
+                href="https://github.com/vicharanashala"
+                className="social-link"
+                aria-label="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaGithub /> GitHub
+              </a>
+            </div>
+          </div>
+
         </div>
 
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
             <p>&copy; 2024 VLED, IIT Ropar. All rights reserved.</p>
-            <div className="footer-bottom-links">
-              <Link to="/privacy">Privacy Policy</Link>
-              <Link to="/terms">Terms of Service</Link>
-            </div>
           </div>
         </div>
 

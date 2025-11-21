@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import drSudarshan from '/images/dr-sudarshan2.png';
 import meenakshi from '/images/meenakshi4.png';
 import aditya from '/images/aditya.jpeg';
@@ -8,8 +6,6 @@ import { Navbar } from "../components/navbar";
 import '../styles/aboutDled.css';
 
 const About = () => {
-  const [activeTab, setActiveTab] = useState('vision');
-
   return (
     <div className="about-page">
       <Navbar /> 
@@ -47,6 +43,210 @@ const About = () => {
         </div>
       </section>
 
+      {/* Vision Section */}
+      <section className="py-6 bg-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="text-center mb-5">
+                <h2 className="display-4 fw-bold mb-4" style={{ color: 'rgb(233, 103, 52)' }}>
+                  <i className="fas fa-eye me-3"></i>Our Vision
+                </h2>
+              </div>
+              <div className="vision-section p-5 rounded-4 shadow-sm bg-light">
+                <p className="lead text-center fw-semibold mb-4" style={{ fontSize: '1.3rem', lineHeight: '1.8' }}>
+                  We envision a future where learning is thoughtfully designed and deeply human at its core.
+                </p>
+                <p className="text-secondary mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  A world where education does not follow a one-size-fits-all model, but adapts beautifully to the pace, style, and curiosity of each learner.
+                </p>
+                <p className="text-secondary mb-4" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  In this future, technology acts as an enabler—not a distraction—supporting educators and empowering students through intuitive tools, immersive content, and smart systems. We aim to reshape the way knowledge is created, presented, and experienced so that learning becomes more meaningful, more relevant, and more inspiring.
+                </p>
+                <p className="text-secondary mb-0" style={{ fontSize: '1.1rem', lineHeight: '1.8' }}>
+                  Our vision is to build an ecosystem where every learning moment feels purposeful, where concepts come alive through great design, and where every learner—regardless of background—can access a transformative educational journey that helps them grow with confidence and joy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-6 bg-light">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="text-center mb-5">
+                <h2 className="display-4 fw-bold mb-4" style={{ color: 'rgb(233, 103, 52)' }}>
+                  <i className="fas fa-bullseye me-3"></i>Our Mission
+                </h2>
+              </div>
+              <div className="mission-section p-5 rounded-4 shadow-sm bg-white">
+                <p className="lead text-center fw-semibold mb-5" style={{ fontSize: '1.3rem', lineHeight: '1.8' }}>
+                  Our mission is to redesign the DNA of education by crafting experiences that bring clarity, engagement, and depth to every learning interaction.
+                </p>
+                <h4 className="fw-bold mb-4">We strive to:</h4>
+                <ul className="list-unstyled">
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Design pedagogically strong learning experiences</strong> using research-backed methods, instructional design principles, and creative storytelling to make education both effective and enjoyable.
+                    </div>
+                  </li>
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Build digital-first solutions</strong> that make complex academic concepts accessible through structured content, visuals, interactivity, and adaptive learning pathways.
+                    </div>
+                  </li>
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Collaborate closely</strong> with educators, institutions, and learners to understand real classroom challenges and build solutions that genuinely solve them.
+                    </div>
+                  </li>
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Use technology mindfully,</strong> ensuring tools support learning outcomes rather than complicate the experience.
+                    </div>
+                  </li>
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Create value-driven educational systems</strong> that bridge gaps in understanding, strengthen foundational learning, and encourage lifelong curiosity.
+                    </div>
+                  </li>
+                  <li className="mb-4 d-flex">
+                    <i className="fas fa-check-circle me-3 mt-1" style={{ color: 'rgb(233, 103, 52)', fontSize: '1.3rem' }}></i>
+                    <div>
+                      <strong>Continuously innovate,</strong> reinventing methodologies and experiences so education remains dynamic, relevant, and impactful for future generations.
+                    </div>
+                  </li>
+                </ul>
+                <p className="text-center fw-semibold mt-5 mb-0" style={{ fontSize: '1.2rem', color: 'rgb(233, 103, 52)' }}>
+                  Everything we do is centered around bringing more meaning, structure, and quality into education.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values Section */}
+      <section className="py-6 bg-white">
+        <div className="container">
+          <div className="row justify-content-center">
+            <div className="col-lg-10">
+              <div className="text-center mb-5">
+                <h2 className="display-4 fw-bold mb-4" style={{ color: 'rgb(233, 103, 52)' }}>
+                  <i className="fas fa-heart me-3"></i>Core Values
+                </h2>
+              </div>
+              
+              <div className="row g-4">
+                {/* Value 1 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-pencil-ruler fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Purpose-Driven Design</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      We believe that how learning is designed shapes how it is understood.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      Every piece of content, every interaction, and every visual is crafted with intention—to simplify, strengthen, and elevate the learning experience. We design with the learner in mind, always prioritizing clarity and meaningful engagement.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Value 2 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-lightbulb fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Innovation with Heart</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      Innovation should serve a purpose.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      We embrace new ideas, technologies, and creative methods that genuinely enhance learning outcomes. Our focus is on building solutions that feel intuitive, human, and thoughtful—never overwhelming or superficial.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Value 3 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-universal-access fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Accessibility for All</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      Education should be an equalizer, not a privilege.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      We are committed to making learning accessible across socio-economic, linguistic, and technological boundaries. Our designs strive to ensure every learner, everywhere, can grow without limits.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Value 4 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-shield-alt fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Integrity in Learning</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      Trust is built through quality and honesty.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      We hold ourselves to high standards of accuracy, fairness, and responsibility. Every resource we create is fact-checked, thoughtfully curated, and focused on real learning impact—not trends or shortcuts.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Value 5 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-users fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Collaboration & Empathy</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      Great education is created together.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      We listen, observe, and co-design with educators, students, and partners. Understanding real needs and lived experiences helps us build solutions that are relatable, inclusive, and effective.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Value 6 */}
+                <div className="col-md-6">
+                  <div className="value-card p-4 rounded-4 shadow-sm h-100 bg-light">
+                    <div className="d-flex align-items-start mb-3">
+                      <i className="fas fa-sync-alt fs-1 me-3" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                      <h4 className="fw-bold mb-0">Continuous Evolution</h4>
+                    </div>
+                    <p className="text-secondary mb-3" style={{ fontSize: '1.05rem', lineHeight: '1.7' }}>
+                      Education must evolve, and so must we.
+                    </p>
+                    <p className="text-secondary mb-0" style={{ fontSize: '1rem', lineHeight: '1.7' }}>
+                      We thrive on curiosity, reflection, and growth. We refine our approaches based on research, feedback, and emerging trends, ensuring our learning designs always stay fresh, relevant, and impactful.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Our Story Section */}
       <section id="our-story" className="py-6 bg-light p-5">
         <div className="container">
@@ -59,148 +259,53 @@ const About = () => {
             </div>
           </div>
           
-          <div className="timeline">
-            <div className="timeline-item left">
-              <div className="timeline-content shadow-sm">
-                <h3>2023</h3>
-                <p>A small research initiative started to revolutionise Education Design</p>
-              </div>
-            </div>
-            <div className="timeline-item right">
-              <div className="timeline-content shadow-sm">
-                <h3>2024</h3>
-                <p>First major funding to spearhead with the project and setup of the lab</p>
-              </div>
-            </div>
-            <div className="timeline-item left">
-              <div className="timeline-content shadow-sm">
-                <h3>2025</h3>
-                <p>Launched our first online learning platform prototype</p>
-              </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission/Vision Tabs */}
-      <section className="py-6">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-10">
-              <div className="mission-tabs">
-                <div className="tabs-header d-flex justify-content-center mt-3 mb-2">
-                  <button 
-                    className={`tab-btn ${activeTab === 'vision' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('vision')}
-                  >
-                    <i className="fas fa-eye me-2"></i> Our Vision
-                  </button>
-                  <button 
-                    className={`tab-btn ${activeTab === 'mission' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('mission')}
-                  >
-                    <i className="fas fa-bullseye me-2"></i> Our Mission
-                  </button>
-                  <button 
-                    className={`tab-btn ${activeTab === 'values' ? 'active' : ''}`}
-                    onClick={() => setActiveTab('values')}
-                  >
-                    <i className="fas fa-heart me-2"></i> Core Values
-                  </button>
-                </div>
+          {/* Horizontal Timeline */}
+          <div className="row">
+            <div className="col-12">
+              <div className="d-flex justify-content-between align-items-start position-relative" style={{ padding: '2rem 0' }}>
+                {/* Timeline Line */}
+                <div className="position-absolute w-100" style={{ height: '4px', backgroundColor: 'rgb(233, 103, 52)', top: '80px', left: '0', zIndex: '0' }}></div>
                 
-                <div className="tab-content p-5 rounded-4 shadow-sm">
-                  {activeTab === 'vision' && (
-                    <div className="vision-content">
-                      <h3 className="fw-bold mb-4">Shaping the Future of Learning</h3>
-                      <p className="lead">
-                        We envision a world where education adapts to each learner's needs, 
-                        leveraging technology to create personalized, accessible, and 
-                        transformative learning experiences.
-                      </p>
-                      <div className="row mt-4">
-                        <div className="col-md-6">
-                          <div className="d-flex mb-3">
-                            <div className="flex-shrink-0 text-warning me-3">
-                              <i className="fas fa-rocket fs-2"></i>
-                            </div>
-                            <div>
-                              <h5 className="fw-bold">Innovation</h5>
-                              <p className="text-muted">
-                                Pioneering new approaches to teaching and learning
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-md-6">
-                          <div className="d-flex mb-3">
-                            <div className="flex-shrink-0 text-warning me-3">
-                              <i className="fas fa-globe fs-2"></i>
-                            </div>
-                            <div>
-                              <h5 className="fw-bold">Global Impact</h5>
-                              <p className="text-muted">
-                                Creating solutions that scale across diverse contexts
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                {/* Timeline Item 2023 */}
+                <div className="text-center position-relative" style={{ flex: '1', zIndex: '1' }}>
+                  <div className="mb-3">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle shadow-sm" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgb(233, 103, 52)', color: 'white' }}>
+                      <i className="fas fa-flag fs-3"></i>
                     </div>
-                  )}
-                  
-                  {activeTab === 'mission' && (
-                    <div className="mission-content">
-                      <h3 className="fw-bold mb-4">Transforming Education Through Design</h3>
-                      <p className="lead">
-                        Our mission is to research, design, and implement educational 
-                        innovations that make learning more effective, engaging, and 
-                        accessible for all.
-                      </p>
-                      <ul className="list-unstyled row mt-4">
-                        <li className="col-md-6 mb-3 d-flex">
-                          <i className="fas fa-check-circle text-success mt-1 me-3"></i>
-                          <span>Develop evidence-based learning frameworks</span>
-                        </li>
-                        <li className="col-md-6 mb-3 d-flex">
-                          <i className="fas fa-check-circle text-success mt-1 me-3"></i>
-                          <span>Create scalable educational technologies</span>
-                        </li>
-                        <li className="col-md-6 mb-3 d-flex">
-                          <i className="fas fa-check-circle text-success mt-1 me-3"></i>
-                          <span>Train the next generation of education designers</span>
-                        </li>
-                        <li className="col-md-6 mb-3 d-flex">
-                          <i className="fas fa-check-circle text-success mt-1 me-3"></i>
-                          <span>Bridge research and practice in education</span>
-                        </li>
-                      </ul>
+                  </div>
+                  <h3 className="fw-bold mb-2" style={{ color: 'rgb(233, 103, 52)' }}>2023</h3>
+                  <p className="text-secondary mx-auto" style={{ maxWidth: '250px' }}>
+                    A small research initiative started to revolutionise Education Design
+                  </p>
+                </div>
+
+                {/* Timeline Item 2024 */}
+                <div className="text-center position-relative" style={{ flex: '1', zIndex: '1' }}>
+                  <div className="mb-3">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle shadow-sm" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgb(233, 103, 52)', color: 'white' }}>
+                      <i className="fas fa-rocket fs-3"></i>
                     </div>
-                  )}
-                  
-                  {activeTab === 'values' && (
-                    <div className="values-content">
-                      <h3 className="fw-bold mb-4">What Guides Our Work</h3>
-                      <div className="row g-4">
-                        {[
-                          { icon: 'users', title: 'Collaboration', desc: 'We believe in the power of diverse perspectives' },
-                          { icon: 'lightbulb', title: 'Creativity', desc: 'Innovative solutions require thinking differently' },
-                          { icon: 'shield-alt', title: 'Integrity', desc: 'Ethical research and transparent practices' },
-                          { icon: 'graduation-cap', title: 'Excellence', desc: 'Striving for the highest standards in all we do' },
-                          { icon: 'heart', title: 'Empathy', desc: 'Designing with learners at the center' },
-                          { icon: 'balance-scale', title: 'Equity', desc: 'Creating accessible solutions for all' }
-                        ].map((value, index) => (
-                          <div key={index} className="col-md-4">
-                            <div className="value-card p-3 h-100 rounded-3">
-                              <i className={`fas fa-${value.icon} text-warning fs-3 mb-3`}></i>
-                              <h5 className="fw-bold">{value.title}</h5>
-                              <p className="text-muted mb-0">{value.desc}</p>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
+                  </div>
+                  <h3 className="fw-bold mb-2" style={{ color: 'rgb(233, 103, 52)' }}>2024</h3>
+                  <p className="text-secondary mx-auto" style={{ maxWidth: '250px' }}>
+                    First major funding to spearhead with the project and setup of the lab
+                  </p>
+                </div>
+
+                {/* Timeline Item 2025 */}
+                <div className="text-center position-relative" style={{ flex: '1', zIndex: '1' }}>
+                  <div className="mb-3">
+                    <div className="d-inline-flex align-items-center justify-content-center rounded-circle shadow-sm" 
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgb(233, 103, 52)', color: 'white' }}>
+                      <i className="fas fa-laptop-code fs-3"></i>
                     </div>
-                  )}
+                  </div>
+                  <h3 className="fw-bold mb-2" style={{ color: 'rgb(233, 103, 52)' }}>2025</h3>
+                  <p className="text-secondary mx-auto" style={{ maxWidth: '250px' }}>
+                    Launched our first online learning platform prototype
+                  </p>
                 </div>
               </div>
             </div>
@@ -208,7 +313,7 @@ const About = () => {
         </div>
       </section>
 
-          {/* Team Section */}
+      {/* Team Section */}
           <section id="team" className="py-6 bg-light">
             <div className="container">
               <div className="row justify-content-center mb-5">

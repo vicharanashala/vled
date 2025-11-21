@@ -1,0 +1,148 @@
+.legal-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 80px 20px 40px;
+}
+
+.legal-container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.legal-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(233, 103, 52);
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 3px solid rgb(233, 103, 52);
+  padding-bottom: 20px;
+}
+
+.legal-intro {
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.legal-section {
+  margin-bottom: 35px;
+}
+
+.legal-section h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  border-left: 4px solid rgb(233, 103, 52);
+  padding-left: 15px;
+}
+
+.legal-section h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #495057;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.legal-section p {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.legal-section ul {
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+
+.legal-section ul li {
+  font-size: 1rem;
+  color: #495057;
+  line-height: 1.8;
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.legal-section strong {
+  color: rgb(233, 103, 52);
+  font-weight: 600;
+}
+
+.contact-email {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.contact-email a {
+  color: rgb(233, 103, 52);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+  color: rgb(253, 154, 110);
+  text-decoration: underline;
+}
+
+.legal-updated {
+  font-size: 0.95rem;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 30px;
+  border-top: 1px solid #dee2e6;
+  font-style: italic;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 30px 25px;
+  }
+
+  .legal-title {
+    font-size: 2rem;
+  }
+
+  .legal-intro {
+    font-size: 1rem;
+  }
+
+  .legal-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .legal-section h3 {
+    font-size: 1.15rem;
+  }
+
+  .legal-section p,
+  .legal-section ul li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-page {
+    padding: 70px 15px 30px;
+  }
+
+  .legal-container {
+    padding: 25px 20px;
+  }
+
+  .legal-title {
+    font-size: 1.75rem;
+  }
+}

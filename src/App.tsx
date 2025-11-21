@@ -18,6 +18,9 @@ import FDPAbout from './app/fdp-about';
 import FDPConcept from './app/fdp-concept';
 import FDPFAQ from './app/fdp-faq';
 import FDPContact from './app/fdp-contact';
+import VibeFAQ from './app/vibe-faq';
+import Privacy from './app/privacy';
+import Terms from './app/terms';
 
 function App() {
   return (
@@ -38,6 +41,9 @@ function App() {
         <Route path="/fdp-concept" element={<FDPConcept />} />
         <Route path="/fdp-faq" element={<FDPFAQ />} />
         <Route path="/fdp-contact" element={<FDPContact />} />
+        <Route path="/vibe-faq" element={<VibeFAQ />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
         <Route path="/collaborations" element={<Collaborations />} />
       </Routes>

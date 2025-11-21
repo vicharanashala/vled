@@ -39,7 +39,25 @@ export const FDPNavbar = ({ activePage = 'home' }: FDPNavbarProps) => {
             <a href="/fdp" className={`nav-link me-4 ${activePage === 'home' ? 'active' : ''}`}>HOME</a>
             <a href="/fdp-about" className={`nav-link me-4 ${activePage === 'about' ? 'active' : ''}`}>ABOUT US</a>
             <a href="/fdp-concept" className={`nav-link me-4 ${activePage === 'concept' ? 'active' : ''}`}>CONCEPT NOTE</a>
-            <a href="/fdp-faq" className={`nav-link me-4 ${activePage === 'faq' ? 'active' : ''}`}>FAQ</a>
+            
+            {/* FAQ Dropdown */}
+            <div className="nav-item dropdown me-4">
+              <a 
+                href="#" 
+                className={`nav-link dropdown-toggle ${activePage === 'faq' || activePage === 'vibe-faq' ? 'active' : ''}`}
+                id="faqDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                FAQ
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="faqDropdown">
+                <li><a className="dropdown-item" href="/vibe-faq">ViBe FAQ</a></li>
+                <li><a className="dropdown-item" href="/fdp-faq">FDP FAQ</a></li>
+              </ul>
+            </div>
+
             <a href="/fdp-contact" className={`nav-link me-4 ${activePage === 'contact' ? 'active' : ''}`}>CONTACT US</a>
             <a href="/fdp#certificate" className={`nav-link me-4 ${activePage === 'certificate' ? 'active' : ''}`}>CERTIFICATE VERIFICATION</a>
             <div className="hamburger">

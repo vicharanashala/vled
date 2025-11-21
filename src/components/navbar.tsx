@@ -18,6 +18,7 @@ export const Navbar: React.FC = () => {
         </Link>
         <nav className="nav-bar">
           <div className="nav-links">
+            <Link to="/" className="nav-text">Home</Link>
             <Link to="/research" className="nav-text">Research</Link>
             <Link to="/fdp" className="nav-text">FDP</Link>
             <Link to="/events" className="nav-text">Events</Link>
@@ -39,6 +40,7 @@ export const Navbar: React.FC = () => {
       ></button>
       {menuOpen && (
         <nav className="mobile-nav-dropdown">
+          <Link to="/" className="nav-text" onClick={handleNavLinkClick}>Home</Link>
           <Link to="/research" className="nav-text" onClick={handleNavLinkClick}>Research</Link>
           <Link to="/fdp" className="nav-text" onClick={handleNavLinkClick}>FDP</Link>
           <Link to="/events" className="nav-text" onClick={handleNavLinkClick}>Events</Link>
