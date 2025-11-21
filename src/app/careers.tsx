@@ -30,7 +30,7 @@ const Careers = () => {
       setFormData(prev => ({ ...prev, [name]: target.checked }));
     } else if (type === 'file') {
       const target = e.target as HTMLInputElement;
-      setFormData(prev => ({ ...prev, [name]: target.files?.[0] || null }));
+      setFormData(prev => ({ ...prev, [name]: target.files?.[0] || null })); 
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }

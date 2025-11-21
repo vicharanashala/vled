@@ -1,61 +1,25 @@
-// pages/contact.tsx
-import { useState, useEffect } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import "../styles/researchPage.css";
-import { Navbar } from '../components/navbar';
+import React, { useState } from "react";
+import { Navbar } from "../components/navbar";
+import { FooterWrapper } from "../components/FooterFile";
+import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import "../styles/contact.css";
 
-const Contact = () => {
+const Contact: React.FC = () => {
+  const today = new Date();
+  const formattedDate = `${String(today.getMonth() + 1).padStart(2, '0')}/${String(today.getDate()).padStart(2, '0')}/${today.getFullYear()}`;
+
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    resumeLink: '',
+    name: "",
+    email: "",
+    date: formattedDate,
+    message: "",
   });
-
-  const [searchParams, setSearchParams] = useSearchParams();
-  const tabFromUrl = searchParams.get('tab');
-  const subjectFromUrl = searchParams.get('subject');
-  const [activeTab, setActiveTab] = useState<'join' | 'collaborate'>(tabFromUrl === 'collaborate' ? 'collaborate' : 'join');
-
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
 
-  const initialFormData = {
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-    resumeLink: '',
-  };
-
-  useEffect(() => {
-    if (tabFromUrl === 'collaborate' || tabFromUrl === 'join') {
-      setActiveTab(tabFromUrl);
-    }
-  }, [tabFromUrl]);
-
-  useEffect(() => {
-    if (subjectFromUrl) {
-      setFormData(prev => ({ ...prev, subject: subjectFromUrl }));
-    }
-  }, [subjectFromUrl]);
-
-  useEffect(() => {
-    if (submitSuccess) {
-      const timer = setTimeout(() => setSubmitSuccess(false), 10000);
-      return () => clearTimeout(timer);
-    }
-  }, [submitSuccess]);
-
-  const handleTabChange = (tab: 'join' | 'collaborate') => {
-    setActiveTab(tab);
-    setSearchParams({ tab });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    setFormData(prev => ({ ...prev, [id]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -63,23 +27,15 @@ const Contact = () => {
     setIsSubmitting(true);
     setSubmitSuccess(false);
 
-    const payload = {
-      category: activeTab,
-      ...formData,
-    };
-
     try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbydzEZ89EhQ-0tI4Hvsc5jC50wo3iq_bYjFG7u5aq3gM2PSQWtoJmeA48t8CjXTgJvvkw/exec', {
-        method: 'POST',
-        body: JSON.stringify(payload),
-        headers: {
-          'Content-Type': 'text/plain',
-        },
+      const response = await fetch("https://script.google.com/macros/s/AKfycbwVfwqhrArROPDB_Cx0DqQZCMGeIuSI4nGp3qECjk2JHWbph-YB7P8OGOWI8RKWp6KaFA/exec", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "text/plain" },
       });
-
       if (response.ok) {
         setSubmitSuccess(true);
-        setFormData(initialFormData);
+        setFormData({ name: "", email: "", date: formattedDate, message: "" });
       } else {
         alert("Submission failed: " + response.statusText);
       }
@@ -90,152 +46,120 @@ const Contact = () => {
     }
   };
 
-  const renderForm = () => (
-    <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <label htmlFor="name" className="form-label">Full Name</label>
-        <input
-          type="text"
-          className="form-control"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-          autoComplete="name"
-        />
-      </div>
-      <div className="mb-3">
-        <label htmlFor="email" className="form-label">Email</label>
-        <input
-          type="email"
-          className="form-control"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-          autoComplete="email"
-        />
-      </div>
-
-      {activeTab === 'join' ? (
-        <div className="mb-3">
-          <label htmlFor="subject" className="form-label">Subject</label>
-          <input
-            type="text"
-            className="form-control"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-          />
-        </div>
-      ) : (
-        <div className="mb-3">
-          <label htmlFor="subject" className="form-label">Collaboration Type</label>
-          <select
-            className="form-select"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            required
-          >
-            <option value="">Select collaboration type</option>
-            <option value="Research">Research Partnership</option>
-            <option value="Project">Project Collaboration</option>
-            <option value="Education">Educational Initiative</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-      )}
-
-      <div className="mb-3">
-        <label htmlFor="message" className="form-label">
-          {activeTab === 'join' ? 'Message' : 'Details'}
-        </label>
-        <textarea
-          className="form-control"
-          id="message"
-          name="message"
-          rows={4}
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-      </div>
-
-      {activeTab === 'join' && (
-        <div className="mb-3">
-          <label htmlFor="resumeLink" className="form-label">Resume/CV Link</label>
-          <input
-            type="url"
-            className="form-control"
-            id="resumeLink"
-            name="resumeLink"
-            value={formData.resumeLink}
-            onChange={handleChange}
-            placeholder="Paste your resume link here"
-          />
-        </div>
-      )}
-
-      <button type="submit" className="btn btn-primary" disabled={isSubmitting} style={{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)' }}>
-        {isSubmitting ? 'Sending...' : 'Submit'}
-      </button>
-
-      {submitSuccess && (
-        <div className="alert alert-success mt-3 mb-0">
-          Thank you for your {activeTab === 'join' ? 'interest' : 'collaboration request'}! We'll get back to you soon.
-        </div>
-      )}
-    </form>
-  );
-
   return (
     <div className="contact-page">
       <Navbar />
-      <section className="hero-section text-dark py-5" style={{ background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)' }}>
-        <div className="container py-4">
-          <h1 className="display-4 fw-bold mb-4 mt-3">Get In Touch</h1>
-          <p className="lead text-secondary mb-4 fs-4">
-            Interested in joining our team or collaborating on a project? <br /> We’d love to hear from you.
+      
+      <div className="contact-hero">
+        <div className="contact-hero-content">
+          <h1 className="contact-hero-title">Contact Us</h1>
+          <p className="contact-hero-description">
+            We'd love to hear from you. Get in touch with VLED Lab for collaborations, inquiries, or just to say hello.
           </p>
         </div>
-      </section>
+      </div>
 
-      <section className="py-5">
-        <div className="container-fluid">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <ul className="nav nav-tabs nav-fill mb-4">
-                <li className="nav-item">
-                  <button className={`nav-link ${activeTab === 'join' ? 'active' : ''}`} onClick={() => handleTabChange('join')}>
-                    Join Our Team
-                  </button>
-                  <button className={`nav-link ${activeTab === 'collaborate' ? 'active' : ''}`} onClick={() => handleTabChange('collaborate')}>
-                    Collaborate With Us
-                  </button>
-                </li>
-              </ul>
+      <div className="contact-main-content">
+        <div className="contact-info-section">
+          <h2 className="section-title">Get in Touch with Us</h2>
+          <p className="section-description">
+            Discover the vision, values, and innovations driving VLED Lab as we explore how design, research, and technology come together to transform education.
+          </p>
 
-              <div className="tab-content p-4 border border-top-0 rounded-bottom">
-                <h3 className="mb-4">
-                  {activeTab === 'join' ? 'Interested in joining our team?' : 'Collaboration Opportunities'}
-                </h3>
-                <p className="mb-4">
-                  {activeTab === 'join'
-                    ? "We're always looking for talented individuals to join our mission of transforming education. Fill out the form and we'll get back to you."
-                    : "Interested in collaborating on research, projects, or educational initiatives? Tell us about your ideas!"}
-                </p>
-                {renderForm()}
+          <div className="contact-details-grid">
+            <div className="contact-detail-card">
+              <div className="detail-icon-wrapper">
+                <FaMapMarkerAlt className="detail-icon" />
               </div>
+              <h3 className="detail-title">Address</h3>
+              <p className="detail-text">
+                VLED, Super Academic Block<br />
+                Indian Institute of Technology, Ropar<br />
+                Rupnagar, Punjab 140001
+              </p>
+            </div>
+
+            <div className="contact-detail-card">
+              <div className="detail-icon-wrapper">
+                <FaEnvelope className="detail-icon" />
+              </div>
+              <h3 className="detail-title">Email</h3>
+              <p className="detail-text">
+                vled@iitrpr.ac.in
+              </p>
+            </div>
+
+            <div className="contact-detail-card">
+              <div className="detail-icon-wrapper">
+                <FaPhone className="detail-icon" />
+              </div>
+              <h3 className="detail-title">Phone</h3>
+              <p className="detail-text">
+                +91-1881-242175
+              </p>
             </div>
           </div>
         </div>
-      </section>
+
+        <div className="contact-form-section">
+          <h3 className="form-section-title">Contact Form</h3>
+          <form className="contact-form" onSubmit={handleSubmit}>
+            <div className="form-row">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="name"
+                  className="form-input"
+                  placeholder="Full Name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  id="email"
+                  className="form-input"
+                  placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+            </div>
+            <div className="form-row">
+              <div className="form-group">
+                <input
+                  type="text"
+                  id="date"
+                  className="form-input"
+                  placeholder="mm/dd/yyyy"
+                  value={formData.date}
+                  readOnly
+                />
+              </div>
+            </div>
+            <div className="form-group full-width">
+              <textarea
+                id="message"
+                rows={5}
+                className="form-textarea"
+                placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
+                required
+              ></textarea>
+            </div>
+            <button type="submit" className="submit-btn" disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Submit"}
+            </button>
+            {submitSuccess && <div className="success-message">Thank you! Your message has been sent.</div>}
+          </form>
+        </div>
+      </div>
+
+      <FooterWrapper />
     </div>
   );
 };

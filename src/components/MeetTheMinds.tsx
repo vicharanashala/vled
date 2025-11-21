@@ -75,7 +75,7 @@ export const MeetTheMinds: React.FC = () => {
         </p>
         
         <div className="button-group">
-          <button className="primary-button" onClick={ButtonClickTeam}>Our Teams</button>
+          <button className="primary-button" onClick={ButtonClickTeam}>Our Team</button>
           <button className="secondary-button" onClick={ButtonClickMentor}>Collaborate with Us</button>
         </div>
       </div>

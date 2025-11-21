@@ -6,7 +6,7 @@ import ResearchInitiatives from "../components/ResearchInitiatives";
 import { ResearchApproach } from "../components/ResearchApproach";
 import { MeetTheMinds } from "../components/MeetTheMinds";
 import { AboutDLED } from "../components/AboutDled";
-import { ContactSection } from "../components/ContactSection";
+import { SuccessStories } from "../components/SuccessStories";
 import { FooterWrapper } from "../components/FooterFile";
 import { useNavigate } from "react-router-dom";
 import { getNextUpcomingEvent } from "../utils/eventUtils";
@@ -27,8 +27,7 @@ const Home = () => {
             navigate('/about');
           }}
           onContact={() => {
-            const contactSection = document.getElementById('contact');
-            if (contactSection) contactSection.scrollIntoView({ behavior: 'smooth' });
+            navigate('/contact');
           }}
         />
       </div>
@@ -42,11 +41,11 @@ const Home = () => {
       <div>
         <MeetTheMinds/>
       </div>
-      <div>
+      {/* <div>
         <AboutDLED/>
-      </div>
+      </div> */}
       <div>
-        <ContactSection/>
+        <SuccessStories/>
       </div>
       <div>
         <FooterWrapper/>

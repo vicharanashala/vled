@@ -4,82 +4,66 @@ import "../styles/researchApproach.css";
 
 export const ResearchApproach: React.FC = () => {
   const navigate = useNavigate();
-  const title = "Our Research Approach";
- 
-
-  const ButtonClickContactPage = () => {
-    navigate('/contact?tab=collaborate'); 
-  };
-
 
   return (
     <div id="research-approach" className="research-approach-container">
-      <div className="main-content-layout">
-      <div className="content-section content-wrapper">
-        <h2 className="research-title">
-          <span className="title-line-1">
-            {title.split(" ").map((word, wordIdx) => (
-              <span key={wordIdx} className="word" style={{ whiteSpace: "pre" }}>
-                {word.split("").map((char, i) => (
-                  <span key={i} className="letter">{char}</span>
-                ))}
-                {/* Add space after each word except the last */}
-                {wordIdx !== title.split(" ").length - 1 && " "}
-              </span>
-            ))}
-          </span>
-          <span className="title-line-2">Combining rigorous academic research with practical implementation</span>
+      {/* Header Section */}
+      <div className="research-header">
+        <p className="research-section-label">Our Research Approach</p>
+        <h2 className="research-main-title">
+          Where Academic Rigor Meets Real-World Learning
         </h2>
-        
-        <p className="research-description">
-          At VLED Lab, we blend rigorous academic research with real-world implementation to create impactful, practical solutions.
+        <p className="research-intro-text">
+          At VLED Lab, research is not confined to papers and presentations—it is woven into every solution we design. 
+          We combine the depth of academic inquiry with the practicality of classroom realities to create learning models 
+          that genuinely work. Our approach ensures that every insight, every framework, and every recommendation is 
+          grounded in evidence and shaped by experience.
         </p>
-        
-        {/* <button className="about-button" onClick={ButtonClickContactPage} >
-          <span className="button-text">Collaborate with Us</span>
-        </button> */}
       </div>
-      
-      <div className="cards-section">
-        {/* Interdisciplinary Teams Card */}
-        <div className="feature-card card-purple card-rotate-left">
-          <div className="card-icon">
-            <img src="https://c.animaapp.com/SP71lV0J/img/teamwork@2x.png" alt="Teamwork" />
+
+      {/* Three Pillars Section */}
+      <div className="pillars-container">
+        <div className="pillar-card">
+          <div className="pillar-icon-wrapper">
+            <div className="pillar-icon">
+              <img src="https://c.animaapp.com/SP71lV0J/img/teamwork@2x.png" alt="Teamwork" />
+            </div>
           </div>
-          <div className="card-content">
-            <h3 className="card-title">Interdisciplinary Teams</h3>
-            <p className="card-description">
-              Expertise in education, computer science, and cognitive psychology
-            </p>
-          </div>
+          <h3 className="pillar-title">Interdisciplinary Teams</h3>
+          <p className="pillar-description">
+            Bringing multiple worlds together to redesign learning. Our research teams are built on a diversity 
+            of expertise—education specialists, instructional designers, computer scientists, behavior researchers, 
+            and cognitive psychologists work side by side.
+          </p>
         </div>
-        
-        {/* Evidence-Based Card */}
-        <div className="feature-card card-blue">
-          <div className="card-icon">
-            <img src="https://c.animaapp.com/SP71lV0J/img/microscope@2x.png" alt="Microscope" />
+
+        <div className="pillar-card pillar-featured">
+          <div className="pillar-icon-wrapper">
+            <div className="pillar-icon">
+              <img src="https://c.animaapp.com/SP71lV0J/img/microscope@2x.png" alt="Microscope" />
+            </div>
           </div>
-          <div className="card-content">
-            <h3 className="card-title">Evidence-Based</h3>
-            <p className="card-description">
-              Rigorous experimental designs with quantitative and qualitative measures
-            </p>
-          </div>
+          <h3 className="pillar-title">Evidence-Based Methods</h3>
+          <p className="pillar-description">
+            We trust data, but we also listen to learners. Our goal is not just to collect data—but to interpret it 
+            meaningfully, translate it into design decisions, and build frameworks that improve clarity, engagement, 
+            and outcomes.
+          </p>
         </div>
-        
-        {/* Real-World Impact Card */}
-        <div className="feature-card card-pink card-rotate-right">
-          <div className="card-icon">
-            <img src="https://c.animaapp.com/SP71lV0J/img/earth--1-@2x.png" alt="Earth" />
+
+        <div className="pillar-card">
+          <div className="pillar-icon-wrapper">
+            <div className="pillar-icon">
+              <img src="https://c.animaapp.com/SP71lV0J/img/earth--1-@2x.png" alt="Earth" />
+            </div>
           </div>
-          <div className="card-content">
-            <h3 className="card-title">Real-World Impact</h3>
-            <p className="card-description">
-              Direct application in educational settings with measurable outcomes
-            </p>
-          </div>
+          <h3 className="pillar-title">Real-World Impact, Not Just Theory</h3>
+          <p className="pillar-description">
+            Research that lives inside classrooms. We test our ideas where it matters—inside real learning environments. 
+            Our work is continuously shaped by classroom dynamics, educator feedback, and learner outcomes—creating 
+            research that truly transforms education.
+          </p>
         </div>
-      </div>
       </div>
     </div>
   );

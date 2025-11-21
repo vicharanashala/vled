@@ -278,7 +278,7 @@ const Research = () => {
           <p className="lead mb-4">We welcome collaborations with academia and industry.</p>
 
           <div className="d-flex justify-content-center gap-3">
-          <Link to="/#contact">
+          <Link to="/contact">
             <button className="btn btn-light btn-lg px-4">
               Contact Us
             </button>
