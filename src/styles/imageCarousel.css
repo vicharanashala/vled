@@ -218,7 +218,7 @@
 
 .carousel-progress-bar {
   height: 100%;
-  background: linear-gradient(90deg, #e96734, #f4a261);
+  background: linear-gradient(90deg, #3498a9, #66bbcd);
   width: 0%;
 }
 
@@ -340,7 +340,7 @@
 
 /* ===== Accessibility ===== */
 .carousel-arrow:focus {
-  outline: 2px solid #e96734;
+  outline: 2px solid #3498a9;
   outline-offset: 2px;
 }
 

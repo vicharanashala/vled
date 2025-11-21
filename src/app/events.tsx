@@ -93,7 +93,7 @@ const Events = () => {
     <div className="events-page">
       <Navbar />
       {/* Hero Section  */}
-      <section className="hero-section py-6" style={{ background: 'linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%)' }}>
+      <section className="hero-section py-6" style={{ background: 'linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%)' }}>
         <div className="container position-relative py-5">
           <div className="row align-items-center">
             <div className="col-lg-8">
@@ -123,7 +123,7 @@ const Events = () => {
       <section id="upcoming" className="py-6 bg-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-4" style={{ color: 'rgb(233, 103, 52)' }}>
+            <h2 className="display-5 fw-bold mb-4" style={{ color: '#ff7f50' }}>
               Stay Tuned for Upcoming Events
             </h2>
             <p className="lead text-secondary mx-auto" style={{ maxWidth: '900px' }}>
@@ -138,8 +138,8 @@ const Events = () => {
                 <div className="card-body p-4 text-center">
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
-                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
-                      <i className="fas fa-microscope fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
+                      <i className="fas fa-microscope fs-1" style={{ color: '#ff7f50' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Advancing Educational Research</h4>
@@ -156,8 +156,8 @@ const Events = () => {
                 <div className="card-body p-4 text-center">
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
-                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
-                      <i className="fas fa-chalkboard-teacher fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
+                      <i className="fas fa-chalkboard-teacher fs-1" style={{ color: '#ff7f50' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Empowering Educators</h4>
@@ -174,8 +174,8 @@ const Events = () => {
                 <div className="card-body p-4 text-center">
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
-                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
-                      <i className="fas fa-tools fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
+                      <i className="fas fa-tools fs-1" style={{ color: '#ff7f50' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Sharing New Learnings</h4>
@@ -192,8 +192,8 @@ const Events = () => {
                 <div className="card-body p-4 text-center">
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
-                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
-                      <i className="fas fa-users fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
+                      <i className="fas fa-users fs-1" style={{ color: '#ff7f50' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Building Community</h4>
@@ -210,8 +210,8 @@ const Events = () => {
                 <div className="card-body p-4 text-center">
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
-                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(233, 103, 52, 0.1)' }}>
-                      <i className="fas fa-rocket fs-1" style={{ color: 'rgb(233, 103, 52)' }}></i>
+                         style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
+                      <i className="fas fa-rocket fs-1" style={{ color: '#ff7f50' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Showcasing Innovations</h4>
@@ -231,7 +231,7 @@ const Events = () => {
       <section className="py-6 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgb(233, 103, 52)' }}>Our Events</h2>
+            <h2 className="display-5 fw-bold mb-3" style={{ color: '#ff7f50' }}>Our Events</h2>
             <p className="lead text-muted max-w-800 mx-auto">
               Explore our past events and stay tuned for upcoming opportunities
             </p>
@@ -351,7 +351,7 @@ const Events = () => {
               ) : (
                 <div className="col-12 text-center py-5">
                   <div className="p-5 rounded-4 shadow-sm bg-white">
-                    <i className="fas fa-calendar-times fs-1 mb-4" style={{ color: 'rgb(233, 103, 52)', opacity: '0.5' }}></i>
+                    <i className="fas fa-calendar-times fs-1 mb-4" style={{ color: '#ff7f50', opacity: '0.5' }}></i>
                     <h3 className="fw-bold mb-3">No {activeTab === 'upcoming' ? 'Upcoming' : 'Past'} Events</h3>
                     <p className="text-secondary mb-0" style={{ fontSize: '1.1rem' }}>
                       {activeTab === 'upcoming' 
@@ -367,7 +367,7 @@ const Events = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-5 text-white" style ={{ backgroundColor: 'rgb(233, 103, 52)' }}>
+      <section className="py-5 text-white" style ={{ backgroundColor: 'rgb(52, 152, 169)' }}>
         <div className="container text-center py-4">
           <h2 className="display-6 fw-bold mb-4" style={{ color: 'rgb(252, 251, 196)' }}  >Have an event idea?</h2>
           <p className="lead mb-4">We're always looking for collaborators and interesting topics.</p>

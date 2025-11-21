@@ -9,7 +9,7 @@
 /* Hero Section */
 .contact-hero {
   width: 100%;
-  background: linear-gradient(135deg, rgb(253, 232, 224) 0%, rgb(253, 249, 247) 100%);
+  background: linear-gradient(135deg, rgb(224, 242, 246) 0%, rgb(240, 248, 250) 100%);
   padding: 100px 20px 80px;
   text-align: center;
 }
@@ -77,19 +77,19 @@
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-top: 4px solid rgb(233, 103, 52);
+  border-top: 4px solid rgb(52, 152, 169);
 }
 
 .contact-detail-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(233, 103, 52, 0.15);
+  box-shadow: 0 12px 35px rgba(52, 152, 169, 0.15);
 }
 
 .detail-icon-wrapper {
   width: 80px;
   height: 80px;
   margin: 0 auto 25px;
-  background: linear-gradient(135deg, rgb(253, 232, 224) 0%, rgb(255, 244, 240) 100%);
+  background: linear-gradient(135deg, rgb(224, 242, 246) 0%, rgb(240, 248, 250) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@
 
 .detail-icon {
   font-size: 2rem;
-  color: rgb(233, 103, 52);
+  color: #ff7f50;
 }
 
 .detail-title {
@@ -167,9 +167,9 @@
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: rgb(233, 103, 52);
+  border-color: rgb(52, 152, 169);
   background: white;
-  box-shadow: 0 0 0 3px rgba(233, 103, 52, 0.1);
+  box-shadow: 0 0 0 3px rgba(52, 152, 169, 0.1);
 }
 
 .form-textarea {
@@ -180,7 +180,7 @@
 .submit-btn {
   width: 100%;
   padding: 16px 40px;
-  background: rgb(233, 103, 52);
+  background: rgb(52, 152, 169);
   color: white;
   border: none;
   border-radius: 8px;
@@ -193,9 +193,9 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: rgb(213, 83, 32);
+  background: rgb(42, 125, 143);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(233, 103, 52, 0.3);
+  box-shadow: 0 8px 20px rgba(52, 152, 169, 0.3);
 }
 
 .submit-btn:disabled {

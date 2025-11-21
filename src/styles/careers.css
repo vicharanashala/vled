@@ -8,7 +8,7 @@
 
 /* Hero Section */
 .careers-hero {
-  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  background: linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%);
   color: white;
   padding: 100px 20px 60px;
   text-align: center;
@@ -72,12 +72,12 @@
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease;
-  border-left: 4px solid rgb(233, 103, 52);
+  border-left: 4px solid rgb(52, 152, 169);
 }
 
 .benefit-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(233, 103, 52, 0.15);
+  box-shadow: 0 8px 25px rgba(52, 152, 169, 0.15);
 }
 
 .benefit-card h3 {
@@ -107,9 +107,9 @@
 }
 
 .form-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
-  color: rgb(233, 103, 52);
+  color: #ff7f50;
   margin-bottom: 15px;
 }
 
@@ -141,12 +141,12 @@
 }
 
 .form-section-title {
-  font-size: 1.75rem;
-  font-weight: 600;
-  color: rgb(233, 103, 52);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ff7f50;
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgb(233, 103, 52);
+  border-bottom: 2px solid rgb(52, 152, 169);
 }
 
 .form-row {
@@ -189,8 +189,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: rgb(233, 103, 52);
-  box-shadow: 0 0 0 3px rgba(233, 103, 52, 0.1);
+  border-color: rgb(52, 152, 169);
+  box-shadow: 0 0 0 3px rgba(52, 152, 169, 0.1);
 }
 
 .form-group textarea {
@@ -221,7 +221,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: rgb(233, 103, 52);
+  accent-color: rgb(52, 152, 169);
 }
 
 .consent-label span {
@@ -231,7 +231,8 @@
 }
 
 .consent-label a {
-  color: rgb(233, 103, 52);
+  color: #ff7f50;
+  font-weight: 600;
   text-decoration: none;
   font-weight: 600;
 }
@@ -244,7 +245,7 @@
 .submit-button {
   width: 100%;
   padding: 16px 32px;
-  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  background: linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%);
   color: white;
   border: none;
   border-radius: 8px;
@@ -252,12 +253,12 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(233, 103, 52, 0.3);
+  box-shadow: 0 4px 15px rgba(52, 152, 169, 0.3);
 }
 
 .submit-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(233, 103, 52, 0.4);
+  box-shadow: 0 6px 20px rgba(52, 152, 169, 0.4);
 }
 
 .submit-button:active {
@@ -287,19 +288,19 @@
 .zoho-apply-button {
   display: inline-block;
   padding: 18px 40px;
-  background: linear-gradient(135deg, rgb(233, 103, 52) 0%, rgb(253, 154, 110) 100%);
+  background: linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%);
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: 600;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(233, 103, 52, 0.3);
+  box-shadow: 0 4px 15px rgba(52, 152, 169, 0.3);
 }
 
 .zoho-apply-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(233, 103, 52, 0.4);
+  box-shadow: 0 6px 20px rgba(52, 152, 169, 0.4);
   color: white;
 }
 

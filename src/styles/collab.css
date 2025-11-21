@@ -27,7 +27,7 @@
   margin: 0 auto;
   color: #333;
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
 }
 
 .collab-section {
@@ -46,12 +46,12 @@
 
 .collab-details .display-4 {
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #222;
 }
 
 .collab-subtitle {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #4a99be;
   font-weight: 500;
   display: block;
@@ -59,7 +59,7 @@
 }
 
 .collab-description {
-  font-size: 1.1rem;
+  font-size: 1.35rem;
   line-height: 1.6;
   margin-bottom: 20px;
   margin-right: 10px;

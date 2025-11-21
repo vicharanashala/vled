@@ -18,7 +18,7 @@
 }
 
 .success-section-label {
-  color: rgb(233, 103, 52);
+  color: #ff7f50;
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -62,12 +62,12 @@
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
-  border-top: 4px solid rgb(233, 103, 52);
+  border-top: 4px solid rgb(52, 152, 169);
 }
 
 .story-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(233, 103, 52, 0.15);
+  box-shadow: 0 12px 35px rgba(52, 152, 169, 0.15);
 }
 
 .video-wrapper {

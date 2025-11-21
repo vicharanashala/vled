@@ -105,7 +105,7 @@ html, body {
 }
 
 .social-link:hover {
-  color: #e96734;
+  color: #ff7f50;
   transform: translateX(5px);
 }
 
@@ -148,14 +148,14 @@ html, body {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e96734;
+  background: #3498a9;
   opacity: 0;
   transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
-  color: #e96734;
-  padding-left: 12px;
+  color: #ff7f50;
+  padding-left: 8px;
 }
 
 .footer-links a:hover::before {
@@ -180,7 +180,7 @@ html, body {
 }
 
 .contact-icon {
-  color: #e96734;
+  color: #ff7f50;
   font-size: 14px;
   margin-top: 2px;
   flex-shrink: 0;
