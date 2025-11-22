@@ -36,6 +36,12 @@ body, html {
   margin-right: 32px;
   transform: scale(5.0);
   transform-origin: left center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(5.2);
 }
 
 /* Background elements */
