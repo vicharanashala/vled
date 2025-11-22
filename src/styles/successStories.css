@@ -18,7 +18,7 @@
 }
 
 .success-section-label {
-  color: #ff7f50;
+  color: rgba(228, 143, 57, 1);
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -57,10 +57,13 @@
 }
 
 .story-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px rgba(52, 152, 169, 0.1);
   transition: all 0.3s ease;
   border-top: 4px solid rgb(52, 152, 169);
 }

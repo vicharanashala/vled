@@ -31,7 +31,7 @@ html, body {
 }
 
 .research-section-label {
-  color: #ff7f50;
+  color: rgba(228, 143, 57, 1);
   font-size: 1.1rem;
   font-weight: 800;
   text-transform: uppercase;
@@ -70,11 +70,14 @@ html, body {
 }
 
 .pillar-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 16px;
   padding: 40px 30px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 8px 32px rgba(52, 152, 169, 0.1);
   transition: all 0.3s ease;
   border-top: 4px solid rgb(52, 152, 169);
 }
@@ -98,12 +101,12 @@ html, body {
 .pillar-icon {
   width: 90px;
   height: 90px;
-  background: linear-gradient(135deg, rgb(224, 242, 246) 0%, rgb(240, 248, 250) 100%);
+  background: linear-gradient(135deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(52, 152, 169, 0.1);
+  box-shadow: 0 4px 15px rgba(228, 143, 57, 0.3);
 }
 
 .pillar-icon img {

@@ -272,9 +272,9 @@ const Research = () => {
           </div>
         </div>
       </section>
-      <section className="py-5 text-white" style ={{ backgroundColor: 'rgb(233, 103, 52)' }}>
+      <section className="py-5 text-white" style ={{ background: 'linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%)' }}>
         <div className="container text-center py-4">
-          <h2 className= "display-6 fw-bold mb-4" style={{ color: 'rgb(252, 251, 196)' }} >Interested in our research?</h2>
+          <h2 className= "display-6 fw-bold mb-4">Interested in our research?</h2>
           <p className="lead mb-4">We welcome collaborations with academia and industry.</p>
 
           <div className="d-flex justify-content-center gap-3">

@@ -1,39 +1,67 @@
 import { Link } from "react-router-dom";
-// import { FaFlask, FaChartLine, FaUsers} from 'react-icons/fa'; // FaEye, FaRobot, FaCertificate, FaChartBar
-import "../styles/researchPage.css";
 import { Navbar } from "../components/navbar";
-
+import { FooterWrapper } from "../components/FooterFile";
+import "../styles/comingsoon.css";
 
 const ComingSoon = () => {
-
   return (
-    <div className="research-page">
-      <Navbar /> {/* Add Navbar at the top */}
-      {/* Hero Section*/}
-      <section className="hero-section text-white py-6" style={{
-        background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)'
-      }}>
-        <div className="container py-5">
-          <div className="row align-items-center">
-            <div className="col-lg-8">
-              <h1 className="display-4 text-black fw-bold mb-4 mt-4" style={{ marginLeft: '-4px' }}>Coming Soon!</h1>
-              <p className="lead mb-4 fs-4 text-secondary">
-                This page is still under construction
+    <>
+      <Navbar />
+      <div className="comingsoon-container">
+        {/* Hero Section */}
+        <section className="comingsoon-hero">
+          <div className="comingsoon-hero-content">
+            <div className="construction-icon-wrapper">
+              <i className="fas fa-hard-hat construction-icon"></i>
+              <i className="fas fa-hammer construction-tool"></i>
+            </div>
+            <h1 className="comingsoon-hero-title">
+              <span className="title-main">Coming</span>
+              <span className="title-accent">Soon!</span>
+            </h1>
+            <p className="comingsoon-hero-subtitle">
+              We're crafting something extraordinary! Our team is hard at work building 
+              amazing content and features for you.
+            </p>
+            <div className="coming-soon-badge">
+              <i className="fas fa-rocket"></i>
+              <span>Under Construction</span>
+            </div>
+            <Link to="/" className="home-button">
+              <i className="fas fa-home"></i>
+              <span>Go Home</span>
+            </Link>
+          </div>
+        </section>
+
+        {/* Stay Connected Section */}
+        <section className="stay-connected-section">
+          <div className="container">
+            <div className="connected-content">
+              <div className="connected-icon">
+                <i className="fas fa-bell"></i>
+              </div>
+              <h2 className="connected-title">Stay Connected!</h2>
+              <p className="connected-text">
+                Follow us on social media to stay updated on our latest developments and be the first 
+                to know when new features go live!
               </p>
-              <div className="d-flex gap-3">
-                <Link to="/">
-                <button className="btn btn-lg px-4 text-light dark-button" style= {{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)', marginRight: '-30px' }}>
-                Go Home
-                </button>
-                </Link>
+              <div className="connected-actions">
+                <a href="https://www.linkedin.com/company/vicharanashala/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="social-btn linkedin">
+                  <i className="fab fa-linkedin"></i>
+                  <span>Follow on LinkedIn</span>
+                </a>
+                <a href="https://www.youtube.com/@vledlabs" target="_blank" rel="noopener noreferrer" className="social-btn youtube">
+                  <i className="fab fa-youtube"></i>
+                  <span>Subscribe on YouTube</span>
+                </a>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      
-
-    </div>
+        </section>
+      </div>
+      <FooterWrapper />
+    </>
   );
 };
 

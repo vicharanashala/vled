@@ -1,6 +1,6 @@
-/* Blog Page Styles */
+/* Coming Soon Page Styles */
 
-.blog-container {
+.comingsoon-container {
   width: 100%;
   min-height: 100vh;
   font-family: "Manrope", Helvetica, sans-serif;
@@ -8,15 +8,19 @@
 }
 
 /* Hero Section */
-.blog-hero {
+.comingsoon-hero {
   background: linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%);
   padding: 120px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.blog-hero::before {
+.comingsoon-hero::before {
   content: '';
   position: absolute;
   top: 0;
@@ -27,7 +31,7 @@
   opacity: 0.4;
 }
 
-.blog-hero-content {
+.comingsoon-hero-content {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
@@ -77,7 +81,7 @@
   }
 }
 
-.blog-hero-title {
+.comingsoon-hero-title {
   margin: 0 0 30px 0;
   display: flex;
   flex-direction: column;
@@ -85,22 +89,22 @@
 }
 
 .title-main {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.9);
   display: block;
 }
 
 .title-accent {
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 800;
   color: #fff;
   display: block;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-.blog-hero-subtitle {
-  font-size: 1.2rem;
+.comingsoon-hero-subtitle {
+  font-size: 1.3rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.95);
   margin: 0 0 40px 0;
@@ -112,15 +116,18 @@
 .coming-soon-badge {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 18px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: 15px 35px;
   border-radius: 50px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   font-size: 1.1rem;
   font-weight: 700;
   color: #fff;
+  margin-bottom: 50px;
+  margin-right: 30px;
   animation: pulse 2s ease-in-out infinite;
 }
 
@@ -140,91 +147,41 @@
   }
 }
 
-/* Preview Section */
-.blog-preview-section {
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 40px;
+  background: rgba(228, 143, 57, 1);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(228, 143, 57, 0.4);
+}
+
+.home-button:hover {
+  background: #ff6a35;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 25px rgba(228, 143, 57, 0.5);
+  color: white;
+}
+
+.home-button i {
+  font-size: 1.2rem;
+}
+
+/* Stay Connected Section */
+.stay-connected-section {
   padding: 100px 20px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(135deg, rgba(52, 152, 169, 0.05) 0%, rgba(102, 187, 205, 0.05) 100%);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 800;
-  color: rgba(228, 143, 57, 1);
-  text-align: center;
-  margin: 0 0 20px 0;
-}
-
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #6c757d;
-  text-align: center;
-  margin: 0 0 60px 0;
-}
-
-.preview-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
-}
-
-.preview-card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 16px;
-  padding: 40px 30px;
-  text-align: center;
-  box-shadow: 0 8px 32px rgba(52, 152, 169, 0.1);
-  transition: all 0.3s ease;
-  border-top: 4px solid rgb(52, 152, 169);
-}
-
-.preview-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 40px rgba(52, 152, 169, 0.2);
-}
-
-.preview-icon-wrapper {
-  width: 80px;
-  height: 80px;
-  background: linear-gradient(135deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 25px;
-  box-shadow: 0 4px 15px rgba(228, 143, 57, 0.3);
-}
-
-.preview-icon {
-  font-size: 2rem;
-  color: white;
-}
-
-.preview-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin: 0 0 15px 0;
-}
-
-.preview-description {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #6c757d;
-  margin: 0;
-}
-
-/* Stay Connected Section */
-.stay-connected-section {
-  padding: 80px 20px;
-  background: linear-gradient(135deg, rgba(52, 152, 169, 0.05) 0%, rgba(102, 187, 205, 0.05) 100%);
 }
 
 .connected-content {
@@ -274,7 +231,7 @@
 }
 
 .connected-text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.8;
   color: #495057;
   margin: 0 0 40px 0;
@@ -329,7 +286,7 @@
 /* Progress Section */
 .progress-section {
   padding: 80px 20px;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
@@ -357,7 +314,7 @@
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%);
+  background: linear-gradient(90deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -389,8 +346,9 @@
 
 /* Responsive Design */
 @media (max-width: 991px) {
-  .blog-hero {
+  .comingsoon-hero {
     padding: 80px 20px;
+    min-height: 60vh;
   }
 
   .construction-icon {
@@ -402,28 +360,15 @@
   }
 
   .title-main {
-    font-size: 1.5rem;
-  }
-
-  .title-accent {
-    font-size: 2.5rem;
-  }
-
-  .blog-hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .blog-preview-section {
-    padding: 60px 20px;
-  }
-
-  .section-title {
     font-size: 2rem;
   }
 
-  .preview-grid {
-    grid-template-columns: 1fr;
-    gap: 25px;
+  .title-accent {
+    font-size: 3rem;
+  }
+
+  .comingsoon-hero-subtitle {
+    font-size: 1.1rem;
   }
 
   .connected-title {
@@ -443,11 +388,11 @@
 }
 
 @media (max-width: 576px) {
-  .blog-container {
+  .comingsoon-container {
     padding-top: 60px;
   }
 
-  .blog-hero {
+  .comingsoon-hero {
     padding: 60px 15px;
   }
 
@@ -461,15 +406,15 @@
   }
 
   .title-main {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .title-accent {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
-  .blog-hero-subtitle {
-    font-size: 0.95rem;
+  .comingsoon-hero-subtitle {
+    font-size: 1rem;
   }
 
   .coming-soon-badge {
@@ -477,29 +422,9 @@
     font-size: 1rem;
   }
 
-  .section-title {
-    font-size: 1.75rem;
-  }
-
-  .section-subtitle {
+  .home-button {
+    padding: 14px 32px;
     font-size: 1rem;
-  }
-
-  .preview-card {
-    padding: 30px 20px;
-  }
-
-  .preview-icon-wrapper {
-    width: 70px;
-    height: 70px;
-  }
-
-  .preview-icon {
-    font-size: 1.75rem;
-  }
-
-  .preview-title {
-    font-size: 1.3rem;
   }
 
   .connected-title {

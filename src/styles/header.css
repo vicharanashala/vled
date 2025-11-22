@@ -9,10 +9,12 @@ body, html {
   left: 0;
   max-width: 100%;
   z-index: 1000;
-  background: linear-gradient(130deg, rgb(224, 242, 246) 0%, rgb(240, 248, 250) 85%);
-  /* background-color: rgb(219, 244, 250); */
+  background: rgba(224, 242, 246, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(52, 152, 169, 0.1);
   padding: 24px 40px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(52, 152, 169, 0.1);
 }
 
 .header {
@@ -135,8 +137,10 @@ body, html {
 }
 
 .vibe-button {
-  background: linear-gradient(45deg, #3498a9, #66bbcd) !important;
-  border: 2px solid transparent !important;
+  background: linear-gradient(45deg, rgba(52, 152, 169, 0.8), rgba(102, 187, 205, 0.8)) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 0 4px 15px rgba(52, 152, 169, 0.3);
   animation: pulse-glow 2s ease-in-out infinite alternate;
   position: relative;
@@ -206,7 +210,7 @@ body, html {
 }
 
 .scroll-arrow {
-  color: #ff7f50;
+  color: rgba(228, 143, 57, 1);
   font-size: 16px;
 }
 
@@ -295,7 +299,7 @@ body, html {
 }
 
 .subtitle {
-  color: #ff7f50;
+  color: rgba(228, 143, 57, 1);
   font-family: "Manrope", Helvetica, sans-serif;
   font-size: 20px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
