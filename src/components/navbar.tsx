@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import "../styles/header.css";
-import logo from '../assets/vled-iit-clear.png';
+import logo from '../assets/vled-iit-clear1.png';
 
 export const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
