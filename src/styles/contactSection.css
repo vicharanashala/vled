@@ -2,7 +2,7 @@
 .contact-container {
   font-family: "Manrope", Helvetica, sans-serif;
   width: 100%;
-  background-color: white;
+  background-color: rgb(240, 248, 250);
   position: relative;
   overflow: hidden;
   display: flex;

@@ -143,7 +143,7 @@
 /* Preview Section */
 .blog-preview-section {
   padding: 100px 20px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%);
+  background: linear-gradient(180deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%);
 }
 
 .container {

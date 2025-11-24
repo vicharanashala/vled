@@ -95,7 +95,7 @@ const Team = () => {
       <Navbar />
       {/* Hero Section*/}
       {/* Hero Section */}
-      <section className="hero-section text-white py-6" style ={{ background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 75%)' }}>
+      <section className="hero-section py-6" style ={{ background: 'linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%)' }}>
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6" style = {{marginTop:'20px'}} >

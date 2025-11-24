@@ -2,7 +2,7 @@
 
 .careers-page {
   min-height: 100vh;
-  background: #f8f9fa;
+  background: rgb(240, 248, 250);
   font-family: "Manrope", Helvetica, sans-serif;
 }
 
@@ -112,7 +112,7 @@
 /* Form Section */
 .careers-form-section {
   padding: 60px 20px 80px;
-  background: #f8f9fa;
+  background: rgb(240, 248, 250);
 }
 
 .form-header {
@@ -256,6 +256,7 @@
 }
 
 .consent-label a:hover {
+  color: rgba(228, 143, 57, 0.8);
   text-decoration: underline;
 }
 
@@ -329,7 +330,7 @@
 .zoho-embed-container {
   max-width: 1000px;
   margin: 0 auto;
-  background: white;
+  background: rgb(240, 248, 250);
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);

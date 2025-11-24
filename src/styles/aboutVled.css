@@ -5,7 +5,7 @@
   font-family: "Manrope", Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(240, 248, 250);
 }
 
 .content-section {

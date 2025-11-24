@@ -8,7 +8,7 @@
   align-items: center;
   padding: 0;
   margin: 0 auto;
-  background-color: white;
+  background-color: rgb(240, 248, 250);
 
   gap: 36px;
 }
@@ -37,19 +37,30 @@
 }
 
 .title {
-  color: #443f3f;
   font-weight: 700;
   margin: 0 0 24px 0;
-  padding: 0;
+  padding: 8px 0;
+}
+
+.minds-title-letter {
+  display: inline-block;
+  color: rgba(228, 143, 57, 1);
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.minds-title-letter:hover {
+  color: rgb(52, 152, 169);
+  transform: translateY(-2px);
 }
 
 p.description {
-  color: #443f3f;
+  color: rgb(52, 152, 169);
   font-size: 1.3rem;
   font-weight: 400;
-  opacity: 0.7;
+  opacity: 0.9;
   margin: 0 0 32px 0;
-  padding: 0;
+  padding: 8px 0;
 }
 
 .button-group {
@@ -68,18 +79,20 @@ p.description {
   border: none;
   cursor: pointer;
   font-size: 18px;
+  transition: all 0.3s ease;
 }
 
 .primary-button {
-  background-color: #383434;
-  color: #f9f08d;
+  background-color: rgba(228, 143, 57, 1);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(228, 143, 57, 0.3);
+  transition: all 0.3s ease;
 }
 
 .primary-button:hover {
-  background-color: #5e5c47;
-  transform:
-    scale(1.02);
-  transition: background-color 0.1s ease, transform 0.1s ease;
+  background-color: rgb(208, 123, 37);
+  box-shadow: 0 4px 16px rgba(228, 143, 57, 0.4);
+  transform: translateY(-2px);
 }
 
 .secondary-button {
@@ -90,9 +103,7 @@ p.description {
 
 .secondary-button:hover {
   background-color: #eeebcd;
-  transform:
-    scale(1.02);
-  transition: background-color 0.1s ease, transform 0.1s ease;
+  transform: translateY(-2px);
 }
 
 .content-section .title {

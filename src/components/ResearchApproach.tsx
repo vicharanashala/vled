@@ -9,9 +9,15 @@ export const ResearchApproach: React.FC = () => {
     <div id="research-approach" className="research-approach-container">
       {/* Header Section */}
       <div className="research-header">
-        <p className="research-section-label">Our Research Approach</p>
+        <p className="research-section-label">
+          {"Our Research Approach".split("").map((char, i) => (
+            <span key={i} className="label-letter">{char === ' ' ? '\u00A0' : char}</span>
+          ))}
+        </p>
         <h2 className="research-main-title">
-          Where Academic Rigor Meets Real-World Learning
+          {"Where Academic Rigor Meets Real-World Learning".split("").map((char, i) => (
+            <span key={i} className="title-letter">{char === ' ' ? '\u00A0' : char}</span>
+          ))}
         </h2>
         <p className="research-intro-text">
           At VLED Lab, research is not confined to papers and presentations—it is woven into every solution we design. 

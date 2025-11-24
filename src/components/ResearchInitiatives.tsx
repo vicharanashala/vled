@@ -85,23 +85,17 @@ const ResearchCardFlip: React.FC<ResearchCardProps> = ({
 const ResearchInitiatives: React.FC = () => (
   <div id="research-initiatives" className="research-initiatives-container">
     <h2 className="section-title">
-      {title.split(" ").map((word, wordIdx, arr) => (
-        <React.Fragment key={wordIdx}>
-          <span className="word" style={{ whiteSpace: "pre" }}>
-            {word.split("").map((char, i) => (
-              <span key={i} className="letter">{char}</span>
-            ))}
-          </span>
-          {/* Add space after each word except the last */}
-          {wordIdx !== arr.length - 1 && " "}
-          {/* Insert a line break after "Our" */}
-          {word === "Our" && <br />}
-        </React.Fragment>
+      {title.split("").map((char, i) => (
+        <span key={i} className="section-title-letter">{char === ' ' ? '\u00A0' : char === '\n' ? <br key={i}/> : char}</span>
       ))}
     </h2>
 
-    <div className="section-description" style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      <button className="visit-research-btn" style= {{ marginTop: '-25px', marginBottom: '25px' }} onClick={() => window.location.href = "/research"}>
+    <p className="section-description">
+      Exploring innovative approaches to transform education through research and design
+    </p>
+
+    <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <button className="visit-research-btn" style= {{ marginBottom: '25px' }} onClick={() => window.location.href = "/research"}>
         <span className="btn-text">Explore Our Research</span>
       </button>
       </div>

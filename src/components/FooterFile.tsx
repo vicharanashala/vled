@@ -30,20 +30,9 @@ export const FooterWrapper = () => {
             <ul className="footer-links">
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/research">Research</Link></li>
-              <li><Link to="/team">Our Team</Link></li>
+              <li style={{ display: 'none' }}><Link to="/team">Our Team</Link></li>
               <li><Link to="/events">Events</Link></li>
               <li><Link to="/collaborations">Collaborations</Link></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div className="footer-section">
-            <h3>Resources</h3>
-            <ul className="footer-links">
-              <li><Link to="/comingsoon">Blogs</Link></li>
-              <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/privacy">Privacy Policy</Link></li>
-              <li><Link to="/terms">Terms & Conditions</Link></li>
             </ul>
           </div>
 
@@ -107,6 +96,16 @@ export const FooterWrapper = () => {
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <div className="footer-bottom-content">
+            {/* Resources */}
+            <div className="footer-bottom-links">
+              <Link to="/comingsoon">Blogs</Link>
+              <span className="separator">•</span>
+              <Link to="/careers">Careers</Link>
+              <span className="separator">•</span>
+              <Link to="/privacy">Privacy Policy</Link>
+              <span className="separator">•</span>
+              <Link to="/terms">Terms & Conditions</Link>
+            </div>
             <p>&copy; 2024 VLED, IIT Ropar. All rights reserved.</p>
           </div>
         </div>

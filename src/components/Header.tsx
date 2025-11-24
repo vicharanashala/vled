@@ -56,7 +56,11 @@ export const Header: React.FC<{ onLearnMore?: () => void; onContact?: () => void
   <div className="header">
     <div className="content hero-flex">
       <div className="hero-text">
-        <span className="subtitle">An IIT Ropar Initiative</span>
+        <span className="subtitle">
+          {"An IIT Ropar Initiative".split("").map((char, i) => (
+            <span key={i} className="subtitle-letter">{char === ' ' ? '\u00A0' : char}</span>
+          ))}
+        </span>
         <h1 className="title">
           <TypedText text="Redefining Education Through Innovation" />
         </h1>

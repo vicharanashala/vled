@@ -11,8 +11,8 @@ html, body {
 
 /* Footer Container */
 .footer {
-  background: linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%);
-  color: #2c3e50;
+  background: linear-gradient(135deg, rgb(25, 90, 105) 0%, rgb(40, 120, 135) 100%);
+  color: #ffffff;
   font-family: "Manrope", Helvetica, sans-serif;
   position: relative;
   overflow: hidden;
@@ -51,7 +51,7 @@ html, body {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 18px;
-  color: #2c3e50;
+  color: #ffffff;
   position: relative;
 }
 
@@ -82,7 +82,7 @@ html, body {
 .footer-description {
   font-size: 14px;
   line-height: 1.6;
-  color: #34495e;
+  color: rgba(255, 255, 255, 0.9);
   margin-bottom: 22px;
 }
 
@@ -96,7 +96,7 @@ html, body {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #2c3e50;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: all 0.3s ease;
   font-size: 15px;
@@ -130,7 +130,7 @@ html, body {
 }
 
 .footer-links a {
-  color: #34495e;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-size: 15px;
   transition: all 0.3s ease;
@@ -189,41 +189,45 @@ html, body {
 .contact-item p {
   font-size: 14px;
   line-height: 1.5;
-  color: #34495e;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   font-weight: 500;
 }
 
 /* Footer Bottom */
 .footer-bottom {
-  border-top: 1px solid rgba(44, 62, 80, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
   padding: 25px 0;
   margin-top: 30px;
 }
 
 .footer-bottom-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
 }
 
 .footer-bottom p {
   font-size: 14px;
-  color: #34495e;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   font-weight: 500;
 }
 
 .footer-bottom-links {
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .footer-bottom-links a {
   font-size: 14px;
-  color: #34495e;
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   transition: color 0.3s ease;
   font-weight: 500;
@@ -231,6 +235,11 @@ html, body {
 
 .footer-bottom-links a:hover {
   color: rgba(228, 143, 57, 1);
+}
+
+.footer-bottom-links .separator {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
 }
 
 /* ===== Responsive Design ===== */

@@ -92,8 +92,8 @@ const Research = () => {
     <div className="research-page">
       <Navbar /> 
       {/* Hero Section*/}
-      <section className="hero-section text-white py-6" style={{
-        background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)'
+      <section className="hero-section py-6" style={{
+        background: 'linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%)'
       }}>
         <div className="container py-5">
           <div className="row align-items-center">
@@ -279,7 +279,7 @@ const Research = () => {
 
           <div className="d-flex justify-content-center gap-3">
           <Link to="/contact">
-            <button className="btn btn-light btn-lg px-4">
+            <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgba(228, 143, 57, 1)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
               Contact Us
             </button>
           </Link>

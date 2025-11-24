@@ -93,26 +93,32 @@ const Events = () => {
     <div className="events-page">
       <Navbar />
       {/* Hero Section  */}
-      <section className="hero-section py-6" style={{ background: 'linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%)' }}>
+      <section className="hero-section py-6" style={{ background: 'linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%)' }}>
         <div className="container position-relative py-5">
           <div className="row align-items-center">
             <div className="col-lg-8">
-              <h1 className="display-3 text-white fw-bold mb-4 mt-4">Events at VLED Lab</h1>
-              <p className="lead mb-3 fs-3 text-white fw-semibold">
-                Where Research, Innovation, and Educator Development Come Alive
+              <h1 className="display-3 fw-bold mb-4 mt-4">
+                {"Events at VLED Lab".split("").map((char, i) => (
+                  <span key={i} className="hero-title-letter">{char === ' ' ? '\u00A0' : char}</span>
+                ))}
+              </h1>
+              <p className="lead mb-3 fs-3 fw-semibold">
+                {"Where Research, Innovation, and Educator Development Come Alive".split("").map((char, i) => (
+                  <span key={i} className="hero-subtitle-letter">{char === ' ' ? '\u00A0' : char}</span>
+                ))}
               </p>
-              <p className="fs-5 text-white mb-5" style={{ lineHeight: '1.8' }}>
+              <p className="fs-5 mb-5" style={{ lineHeight: '1.8', color: '#495057' }}>
                 At VLED Lab, every event is designed to move education forward. We regularly bring together educators, researchers, designers, and innovators to explore new possibilities in learning. Our workshops, FDPs, and interactive sessions focus on strengthening teaching practices, deepening academic design, and integrating research-backed methods into classrooms.
               </p>
               <Link to="#upcoming">
-                <button className="btn btn-light btn-lg px-5 py-3 fw-bold" style={{ borderRadius: '50px' }}>
+                <button className="btn btn-lg px-5 py-3 fw-bold" style={{ borderRadius: '50px', backgroundColor: 'rgba(228, 143, 57, 1)', color: '#ffffff', border: 'none', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(228, 143, 57, 0.4)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
                   Learn More <i className="fas fa-arrow-down ms-2"></i>
                 </button>
               </Link>
             </div>
             <div className="col-lg-4 d-none d-lg-block">
               <div className="text-center">
-                <i className="fas fa-calendar-check" style={{ fontSize: '12rem', color: 'rgba(255, 255, 255, 0.2)' }}></i>
+                <i className="fas fa-calendar-check" style={{ fontSize: '12rem', color: 'rgba(228, 143, 57, 0.9)' }}></i>
               </div>
             </div>
           </div>
@@ -123,8 +129,10 @@ const Events = () => {
       <section id="upcoming" className="py-6 bg-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-4" style={{ color: '#ff7f50' }}>
-              Stay Tuned for Upcoming Events
+            <h2 className="display-5 fw-bold mb-4">
+              {"Stay Tuned for Upcoming Events".split("").map((char, i) => (
+                <span key={i} className="section-title-letter">{char === ' ' ? '\u00A0' : char}</span>
+              ))}
             </h2>
             <p className="lead text-secondary mx-auto" style={{ maxWidth: '900px' }}>
               Events that reflect our commitment to advancing education
@@ -139,7 +147,7 @@ const Events = () => {
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
                          style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
-                      <i className="fas fa-microscope fs-1" style={{ color: '#ff7f50' }}></i>
+                      <i className="fas fa-microscope fs-1" style={{ color: 'rgba(228, 143, 57, 1)' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Advancing Educational Research</h4>
@@ -157,7 +165,7 @@ const Events = () => {
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
                          style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
-                      <i className="fas fa-chalkboard-teacher fs-1" style={{ color: '#ff7f50' }}></i>
+                      <i className="fas fa-chalkboard-teacher fs-1" style={{ color: 'rgba(228, 143, 57, 1)' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Empowering Educators</h4>
@@ -175,7 +183,7 @@ const Events = () => {
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
                          style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
-                      <i className="fas fa-tools fs-1" style={{ color: '#ff7f50' }}></i>
+                      <i className="fas fa-tools fs-1" style={{ color: 'rgba(228, 143, 57, 1)' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Sharing New Learnings</h4>
@@ -193,7 +201,7 @@ const Events = () => {
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
                          style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
-                      <i className="fas fa-users fs-1" style={{ color: '#ff7f50' }}></i>
+                      <i className="fas fa-users fs-1" style={{ color: 'rgba(228, 143, 57, 1)' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Building Community</h4>
@@ -211,7 +219,7 @@ const Events = () => {
                   <div className="mb-4">
                     <div className="d-inline-flex align-items-center justify-content-center rounded-circle" 
                          style={{ width: '80px', height: '80px', backgroundColor: 'rgba(52, 152, 169, 0.1)' }}>
-                      <i className="fas fa-rocket fs-1" style={{ color: '#ff7f50' }}></i>
+                      <i className="fas fa-rocket fs-1" style={{ color: 'rgba(228, 143, 57, 1)' }}></i>
                     </div>
                   </div>
                   <h4 className="fw-bold mb-3">Showcasing Innovations</h4>
@@ -231,7 +239,7 @@ const Events = () => {
       <section className="py-6 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3" style={{ color: '#ff7f50' }}>Our Events</h2>
+            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgba(228, 143, 57, 1)' }}>Our Events</h2>
             <p className="lead text-muted max-w-800 mx-auto">
               Explore our past events and stay tuned for upcoming opportunities
             </p>
@@ -312,7 +320,7 @@ const Events = () => {
                                 className="btn btn-warning text-dark fw-bold flex-grow-1"
                                 title="Add this event to your Google Calendar"
                               >
-                                <i className="" aria-hidden="true"></i>
+                                <i className="fas fa-calendar-plus me-2" aria-hidden="true" style={{ fontSize: '1.3rem', color: '#000' }}></i>
                                 Add to Calendar
                               </a>
                               <button
@@ -321,7 +329,7 @@ const Events = () => {
                                 onClick={() => downloadICS(event)}
                                 type="button"
                               >
-                                <i className="far fa-calendar-alt" aria-hidden="true"></i>
+                                <i className="fas fa-download me-2" aria-hidden="true" style={{ fontSize: '1.3rem', color: '#333' }}></i>
                                 <span className="visually-hidden">Download ICS</span>
                               </button>
                             </div>
@@ -351,7 +359,7 @@ const Events = () => {
               ) : (
                 <div className="col-12 text-center py-5">
                   <div className="p-5 rounded-4 shadow-sm bg-white">
-                    <i className="fas fa-calendar-times fs-1 mb-4" style={{ color: '#ff7f50', opacity: '0.5' }}></i>
+                    <i className="fas fa-calendar-times fs-1 mb-4" style={{ color: 'rgba(228, 143, 57, 0.9)' }}></i>
                     <h3 className="fw-bold mb-3">No {activeTab === 'upcoming' ? 'Upcoming' : 'Past'} Events</h3>
                     <p className="text-secondary mb-0" style={{ fontSize: '1.1rem' }}>
                       {activeTab === 'upcoming' 
@@ -367,13 +375,13 @@ const Events = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-5 text-white" style ={{ backgroundColor: 'rgb(52, 152, 169)' }}>
+      <section className="py-5 text-white" style ={{ background: 'linear-gradient(135deg, rgb(52, 152, 169) 0%, rgb(102, 187, 205) 100%)' }}>
         <div className="container text-center py-4">
-          <h2 className="display-6 fw-bold mb-4" style={{ color: 'rgb(252, 251, 196)' }}  >Have an event idea?</h2>
+          <h2 className="display-6 fw-bold mb-4">Have an event idea?</h2>
           <p className="lead mb-4">We're always looking for collaborators and interesting topics.</p>
 
           <Link to="/contact?tab=collaborate&subject=Other">
-          <button className="btn btn-light btn-lg px-4">
+          <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgba(228, 143, 57, 1)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
             Propose an Event <i className="fas fa-arrow-right ms-2"></i>
           </button>
           </Link>

@@ -20,9 +20,15 @@ export const SuccessStories: React.FC = () => {
   return (
     <div id="success-stories" className="success-stories-container">
       <div className="success-stories-header">
-        <p className="success-section-label">Success Stories</p>
+        <p className="success-section-label">
+          {"Success Stories".split("").map((char, i) => (
+            <span key={i} className="success-label-letter">{char === ' ' ? '\u00A0' : char}</span>
+          ))}
+        </p>
         <h2 className="success-main-title">
-          Real Stories, Real Impact
+          {"Real Stories, Real Impact".split("").map((char, i) => (
+            <span key={i} className="success-title-letter">{char === ' ' ? '\u00A0' : char}</span>
+          ))}
         </h2>
         <p className="success-intro-text">
           Hear directly from learners and educators who have experienced the transformative power of thoughtfully designed learning.

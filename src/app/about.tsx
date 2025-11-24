@@ -21,7 +21,7 @@ const About = () => {
                 The Vicharanashala Lab for Education of Design (VLED) at IIT Ropar is pioneering 
                 transformative approaches to learning in the digital age.
               </p>
-              <div className="d-flex gap-3">
+              <div style={{ display: 'none' }}>
                 <a href="#team" className="btn btn-lg px-4 text-light dark-button" style= {{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)' }}>
                   Meet the Team
                 </a>
@@ -44,7 +44,7 @@ const About = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-6 bg-white">
+      <section className="py-6 bg-white" style={{ marginBottom: '5rem' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -73,7 +73,7 @@ const About = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="py-6 bg-light">
+      <section className="py-6 bg-light" style={{ marginBottom: '5rem' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -135,7 +135,7 @@ const About = () => {
       </section>
 
       {/* Core Values Section */}
-      <section className="py-6 bg-white">
+      <section className="py-6 bg-white" style={{ marginBottom: '5rem' }}>
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
@@ -314,9 +314,9 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-          <section id="team" className="py-6 bg-light">
+          <section id="team" className="py-6 bg-light" style={{ display: 'none' }}>
             <div className="container">
-              <div className="row justify-content-center mb-5">
+              <div className="row justify-content-center mb-5" style={{ display: 'none' }}>
                 <div className="col-lg-8 text-center">
                   <h2 className="display-5 fw-bold mb-3 p-3">Meet Our Team</h2>
                   <p className="lead text-muted">
@@ -400,7 +400,7 @@ const About = () => {
     </div>
 
           
-          <div className="text-center mt-5 p-3">
+          <div className="text-center mt-5 p-3" style={{ display: 'none' }}>
             <a href="/team" className="btn btn-outline-warning fw-bold btn-lg px-4">
               View Full Team <i className="fas fa-arrow-right ms-2"></i>
             </a>

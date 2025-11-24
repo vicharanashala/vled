@@ -33,8 +33,8 @@ const Collaborations = () => {
       <div className="collab-page">
         <Navbar />
         {/* Hero Section*/}
-        <section className="hero-section text-white py-5" style={{
-          background: 'linear-gradient(130deg,rgb(253, 232, 224) 0%,rgb(253, 249, 247) 85%)'
+        <section className="hero-section py-5" style={{
+          background: 'linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%)'
         }}>
           <div className="container py-3">
             <div className="row align-items-center">

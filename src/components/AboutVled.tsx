@@ -2,7 +2,7 @@ import React from "react";
 // import { useNavigate } from 'react-router-dom';
 import "../styles/aboutDled.css";
 
-export const AboutDLED: React.FC = () => {
+export const AboutVLED: React.FC = () => {
   // const navigate = useNavigate();
   const title = "Learn VLED's Story";
 

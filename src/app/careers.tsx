@@ -50,7 +50,7 @@ const Careers = () => {
       {/* Hero Section */}
       <section className="careers-hero">
         <div className="container">
-          <h1 className="careers-hero-title">🌟 Careers at VLED Lab</h1>
+          <h1 className="careers-hero-title">Careers at VLED Lab</h1>
           <p className="careers-hero-subtitle">Join us in designing the future of learning.</p>
         </div>
       </section>

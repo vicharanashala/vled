@@ -3,14 +3,41 @@ body, html {
 }
 
 .section-title {
-  color: #383434;
   font-size: 3.5rem;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 77.2px;
   text-align: center;
   padding-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.section-title-letter {
+  display: inline-block;
+  color: rgba(228, 143, 57, 1);
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.section-title-letter:hover {
+  color: rgb(52, 152, 169);
+  transform: translateY(-2px);
+}
+
+.section-description {
+  color: rgb(52, 152, 169);
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+  line-height: 1.8;
+  padding: 8px 20px;
+}
+
+.section-description:hover {
+  color: rgba(228, 143, 57, 1);
 }
 
 .visit-research-btn {
@@ -28,22 +55,22 @@ body, html {
     transform 0.1s;
   outline: none;
 
-  background-color: rgb(221, 109, 161);
+  background-color: rgba(228, 143, 57, 1);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  box-shadow: 0 2px 8px rgba(228, 143, 57, 0.3);
   border: none;
 }
 
 .visit-research-btn:focus, .visit-research-btn:hover {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-  background-color: #ca4382;
-  color: #f8f8f8;
+  box-shadow: 0 4px 16px rgba(228, 143, 57, 0.4);
+  background-color: rgb(208, 123, 37);
+  color: #ffffff;
   transform: translateY(-1px) scale(1.01);
 }
 
 .visit-research-btn:active {
-  background-color: #333;
-  color: #fffbe0;
+  background-color: rgb(188, 103, 17);
+  color: #ffffff;
   transform: translateY(-1px) scale(1.01);
 }
 
@@ -53,7 +80,7 @@ body, html {
 }
 
 .flip-cards-heading {
-  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
   font-size: 2.1rem;
   font-weight: 700;
   color: #0c5ca7;
@@ -88,7 +115,7 @@ body, html {
 .flip-card-title {
   margin: 0;
   font-size: 1.5rem;
-  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.2px;
@@ -96,7 +123,8 @@ body, html {
 .flip-card-meta {
   margin: 10px 0 0 0;
   font-size: 1.05rem;
-  font-family: 'Fira Mono', 'Consolas', monospace;
+  font-family: "Manrope", Helvetica, sans-serif;
+  font-weight: 400;
   color: #fafafa;
   opacity: 0.85;
   letter-spacing: 0.1px;
@@ -107,20 +135,22 @@ body, html {
   margin-bottom: 8px;
   color: #a70c0c;
   font-size: 1.13rem;
-  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
 }
 .flip-card-back-outcome {
   margin: 0 0 4px 0;
   font-size: 1.01rem;
   color: #0c5ca7;
-  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
+  font-weight: 400;
 }
 .flip-card-back-desc {
   margin-top: 18px;
   font-size: 1rem;
   opacity: 0.78;
   color: #222;
-  font-family: 'Manrope', 'Segoe UI', Arial, sans-serif;
+  font-family: "Manrope", Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 /* Slower cards */

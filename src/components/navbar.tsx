@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import "../styles/header.css";
-import logo from '../assets/vled-iit-clear1.png';
+import logo from '../assets/vled-iit-clear.png';
 
 export const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,8 +13,10 @@ export const Navbar: React.FC = () => {
       <div className="bg-top"></div>
       <div className="bg-bottom"></div>
       <div className="header-top">
-        <Link to="/">
-          <img src={logo} alt="VLED and IIT Logos" className="header-logo" />
+        <Link to="/" className="logo-link">
+          <div className="logo-container">
+            <img src={logo} alt="VLED and IIT Logos" className="header-logo" />
+          </div>
         </Link>
         <nav className="nav-bar">
           <div className="nav-links">
@@ -22,7 +24,7 @@ export const Navbar: React.FC = () => {
             <Link to="/research" className="nav-text">Research</Link>
             <Link to="/fdp" className="nav-text">FDP</Link>
             <Link to="/events" className="nav-text">Events</Link>
-            <Link to="/team" className="nav-text">Team</Link>
+            <Link to="/team" className="nav-text" style={{ display: 'none' }}>Team</Link>
             <Link to="/comingsoon" className="nav-text">Blog</Link>
           </div>
           <Link to="/contact">
@@ -44,7 +46,7 @@ export const Navbar: React.FC = () => {
           <Link to="/research" className="nav-text" onClick={handleNavLinkClick}>Research</Link>
           <Link to="/fdp" className="nav-text" onClick={handleNavLinkClick}>FDP</Link>
           <Link to="/events" className="nav-text" onClick={handleNavLinkClick}>Events</Link>
-          <Link to="/team" className="nav-text" onClick={handleNavLinkClick}>Team</Link>
+          <Link to="/team" className="nav-text" onClick={handleNavLinkClick} style={{ display: 'none' }}>Team</Link>
           <Link to="/comingsoon" className="nav-text" onClick={handleNavLinkClick}>Blog</Link>
           <Link to="/contact">
             <button className="nav-button">

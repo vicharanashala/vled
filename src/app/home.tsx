@@ -5,7 +5,7 @@ import { EventFlash } from "../components/EventFlash";
 import ResearchInitiatives from "../components/ResearchInitiatives";
 import { ResearchApproach } from "../components/ResearchApproach";
 import { MeetTheMinds } from "../components/MeetTheMinds";
-import { AboutDLED } from "../components/AboutDled";
+//import { AboutVLED } from "../components/AboutVled";
 import { SuccessStories } from "../components/SuccessStories";
 import { FooterWrapper } from "../components/FooterFile";
 import { useNavigate } from "react-router-dom";
@@ -38,11 +38,11 @@ const Home = () => {
       <div>
         <ResearchApproach/>
       </div>
-      <div>
+      <div style={{ display: 'none' }}>
         <MeetTheMinds/>
       </div>
       {/* <div>
-        <AboutDLED/>
+        <AboutVLED/>
       </div> */}
       <div>
         <SuccessStories/>

@@ -1,6 +1,6 @@
 .legal-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%);
   padding: 80px 20px 40px;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .contact-email a:hover {
-  color: rgb(102, 187, 205);
+  color: rgba(228, 143, 57, 1);
   text-decoration: underline;
 }
 
