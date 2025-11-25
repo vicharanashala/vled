@@ -99,7 +99,7 @@ const Research = () => {
           <div className="row align-items-center">
             <div className="col-lg-8">
 
-              <h1 className="display-4 text-black fw-bold mb-4 mt-4" style={{ marginLeft: '-4px' }}>
+              <h1 className="display-4 fw-bold mb-4 mt-4" style={{ marginLeft: '-4px', color: 'rgb(52, 152, 169)' }}>
                 Research at VLED
               </h1>
               <p className="lead mb-4 fs-4 text-secondary">
@@ -136,7 +136,7 @@ const Research = () => {
       <section className="py-5 bg-light">
         <div className="container-fluid ml-10 mr-10">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Research Initiatives</h2>
+            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgb(52, 152, 169)' }}>Our Research Initiatives</h2>
             <p className="lead text-muted max-w-800 mx-auto">
               Interdisciplinary projects at the intersection of education and cutting-edge technology
             </p>
@@ -229,7 +229,7 @@ const Research = () => {
       <section className="py-5 bg-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3">Our Research Approach</h2>
+            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgb(52, 152, 169)' }}>Our Research Approach</h2>
             <p className="lead text-muted max-w-800 mx-auto">
               Combining rigorous academic research with practical implementation
             </p>
