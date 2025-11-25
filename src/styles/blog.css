@@ -193,7 +193,7 @@
 .preview-icon-wrapper {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
+  background: rgba(228, 143, 57, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -236,7 +236,7 @@
 .connected-icon {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
+  background: rgba(228, 143, 57, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;

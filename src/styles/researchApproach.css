@@ -125,7 +125,7 @@ html, body {
 .pillar-icon {
   width: 90px;
   height: 90px;
-  background: linear-gradient(135deg, rgba(228, 143, 57, 1) 0%, rgb(52, 152, 169) 100%);
+  background: rgba(228, 143, 57, 1);
   border-radius: 50%;
   display: flex;
   align-items: center;

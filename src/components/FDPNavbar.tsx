@@ -15,10 +15,10 @@ export const FDPNavbar = ({ activePage = 'home' }: FDPNavbarProps) => {
               <i className="fas fa-envelope me-2"></i>
               mmttp@iitrpr.ac.in
             </span>
-            <span>
+            <a href="/" className="text-white text-decoration-none">
               <i className="fas fa-arrow-left me-2"></i>
-              <a href="/" className="text-white text-decoration-none">Back to VLED Website</a>
-            </span>
+              Back to VLED Website
+            </a>
           </div>
           <div className="social-icons">
             <a href="#" className="me-3" title="Facebook"><i className="fab fa-facebook-f"></i></a>

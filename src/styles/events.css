@@ -62,36 +62,36 @@
 /* Letter-by-letter hover effects for event titles */
 .events-page .hero-title-letter {
   display: inline-block;
-  color: rgba(228, 143, 57, 1);
+  color: rgb(52, 152, 169);
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .events-page .hero-title-letter:hover {
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
   transform: translateY(-2px);
 }
 
 .events-page .hero-subtitle-letter {
   display: inline-block;
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .events-page .hero-subtitle-letter:hover {
-  color: rgba(228, 143, 57, 1);
+  color: rgb(52, 152, 169);
   transform: translateY(-2px);
 }
 
 .events-page .section-title-letter {
   display: inline-block;
-  color: rgba(228, 143, 57, 1);
+  color: rgb(52, 152, 169);
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .events-page .section-title-letter:hover {
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
   transform: translateY(-2px);
 }

@@ -14,18 +14,18 @@ body, html {
 
 .section-title-letter {
   display: inline-block;
-  color: rgba(228, 143, 57, 1);
+  color: rgb(52, 152, 169);
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
 
 .section-title-letter:hover {
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
   transform: translateY(-2px);
 }
 
 .section-description {
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
   font-size: 1.2rem;
   font-weight: 500;
   text-align: center;
@@ -37,7 +37,7 @@ body, html {
 }
 
 .section-description:hover {
-  color: rgba(228, 143, 57, 1);
+  color: rgb(52, 152, 169);
 }
 
 .visit-research-btn {
@@ -55,17 +55,16 @@ body, html {
     transform 0.1s;
   outline: none;
 
-  background-color: rgba(228, 143, 57, 1);
+  background: linear-gradient(45deg, #3498a9, #66bbcd);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(228, 143, 57, 0.3);
+  box-shadow: 0 2px 8px rgba(52, 152, 169, 0.3);
   border: none;
 }
 
 .visit-research-btn:focus, .visit-research-btn:hover {
-  box-shadow: 0 4px 16px rgba(228, 143, 57, 0.4);
-  background-color: rgb(208, 123, 37);
+  box-shadow: 0 4px 16px rgba(52, 152, 169, 0.4);
   color: #ffffff;
-  transform: translateY(-1px) scale(1.01);
+  transform: translateY(-2px) scale(1.01);
 }
 
 .visit-research-btn:active {
@@ -133,14 +132,14 @@ body, html {
 .flip-card-back-title {
   font-weight: 700;
   margin-bottom: 8px;
-  color: #a70c0c;
+  color: rgba(228, 143, 57, 1);
   font-size: 1.13rem;
   font-family: "Manrope", Helvetica, sans-serif;
 }
 .flip-card-back-outcome {
   margin: 0 0 4px 0;
   font-size: 1.01rem;
-  color: #0c5ca7;
+  color: #495057;
   font-family: "Manrope", Helvetica, sans-serif;
   font-weight: 400;
 }

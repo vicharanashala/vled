@@ -107,7 +107,7 @@ const Research = () => {
               </p>
               <div className="d-flex gap-3">
                 <Link to="/contact?tab=collaborate">
-                <button className="btn btn-lg px-4 text-light dark-button" style= {{ backgroundColor: 'rgb(233, 103, 52)', borderColor: 'rgb(233, 103, 52)' }}>
+                <button className="btn btn-lg px-4 dark-button" style= {{ background: 'linear-gradient(45deg, #3498a9, #66bbcd)', color: 'white', border: 'none', boxShadow: '0 6px 20px rgba(52, 152, 169, 0.3)' }}>
                   Collaborate With Us
                 </button>
                 </Link>
@@ -122,10 +122,10 @@ const Research = () => {
             </div>
             <div className="col-lg-4 d-none d-lg-block">
               <img 
-                src="../images/brain.png" 
+                src="../images/research_page_clear.png" 
                 alt="Research Illustration" 
                 className="img-fluid"
-                style={{ maxWidth: "200px", height: "auto", marginTop: "-10px" }}
+                style={{ maxWidth: "400px", height: "auto", marginTop: "-10px" }}
               />
             </div>
           </div>
@@ -279,7 +279,7 @@ const Research = () => {
 
           <div className="d-flex justify-content-center gap-3">
           <Link to="/contact">
-            <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgba(228, 143, 57, 1)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+            <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgb(52, 152, 169)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
               Contact Us
             </button>
           </Link>

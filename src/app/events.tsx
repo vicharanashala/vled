@@ -111,7 +111,7 @@ const Events = () => {
                 At VLED Lab, every event is designed to move education forward. We regularly bring together educators, researchers, designers, and innovators to explore new possibilities in learning. Our workshops, FDPs, and interactive sessions focus on strengthening teaching practices, deepening academic design, and integrating research-backed methods into classrooms.
               </p>
               <Link to="#upcoming">
-                <button className="btn btn-lg px-5 py-3 fw-bold" style={{ borderRadius: '50px', backgroundColor: 'rgba(228, 143, 57, 1)', color: '#ffffff', border: 'none', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(228, 143, 57, 0.4)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+                <button className="btn btn-lg px-5 py-3 fw-bold" style={{ borderRadius: '50px', background: 'linear-gradient(45deg, #3498a9, #66bbcd)', color: '#ffffff', border: 'none', transition: 'all 0.3s ease', boxShadow: '0 6px 20px rgba(52, 152, 169, 0.3)' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 8px 25px rgba(52, 152, 169, 0.4)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = '0 6px 20px rgba(52, 152, 169, 0.3)'; }}>
                   Learn More <i className="fas fa-arrow-down ms-2"></i>
                 </button>
               </Link>
@@ -381,7 +381,7 @@ const Events = () => {
           <p className="lead mb-4">We're always looking for collaborators and interesting topics.</p>
 
           <Link to="/contact?tab=collaborate&subject=Other">
-          <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgba(228, 143, 57, 1)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
+          <button className="btn btn-lg px-4" style={{ backgroundColor: '#ffffff', color: 'rgb(52, 152, 169)', fontWeight: 'bold', border: '2px solid #ffffff', transition: 'all 0.3s ease' }} onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.boxShadow = '0 4px 16px rgba(255, 255, 255, 0.5)'; }} onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.boxShadow = 'none'; }}>
             Propose an Event <i className="fas fa-arrow-right ms-2"></i>
           </button>
           </Link>

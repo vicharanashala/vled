@@ -96,7 +96,7 @@ const ResearchInitiatives: React.FC = () => (
 
     <div style= {{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <button className="visit-research-btn" style= {{ marginBottom: '25px' }} onClick={() => window.location.href = "/research"}>
-        <span className="btn-text">Explore Our Research</span>
+        <span className="btn-text">Our Research</span>
       </button>
       </div>
     

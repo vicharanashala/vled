@@ -34,8 +34,8 @@ body, html {
 
 .logo-container {
   height: 100px;
-  width: 200px;
-  overflow: visible;
+  width: 380px;
+  overflow: hidden;
   display: flex;
   align-items: flex-start;
   margin-right: 32px;
@@ -398,28 +398,29 @@ body, html {
 }
 
 .btn-black {
-  background-color: rgba(228, 143, 57, 1);
+  background: linear-gradient(45deg, #3498a9, #66bbcd);
   color: #ffffff;
-  box-shadow: 0 2px 8px rgba(228, 143, 57, 0.3);
+  box-shadow: 0 2px 8px rgba(52, 152, 169, 0.3);
   border: none;
 }
 
 .btn-black:hover {
-  background-color: rgb(208, 123, 37);
   color: #ffffff;
-  box-shadow: 0 4px 16px rgba(228, 143, 57, 0.4);
-  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(52, 152, 169, 0.4);
+  transform: translateY(-2px);
 }
 
 .btn-outline {
-  background-color: transparent;
-  color: #383434;
-  border: 1px solid #383434;
+  background: linear-gradient(45deg, #3498a9, #66bbcd);
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 8px rgba(52, 152, 169, 0.3);
 }
 
 .btn-outline:hover {
-  background-color: #eee5cd;
-  transform: scale(1.02);
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(52, 152, 169, 0.4);
+  transform: translateY(-2px);
 }
 
 /* ===== Image Section ===== */
