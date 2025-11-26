@@ -239,7 +239,11 @@ const Events = () => {
       <section className="py-6 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-5 fw-bold mb-3" style={{ color: 'rgba(228, 143, 57, 1)' }}>Our Events</h2>
+            <h2 className="display-5 fw-bold mb-3">
+              {"Our Events".split("").map((char, i) => (
+                <span key={i} className="section-title-letter">{char === ' ' ? '\u00A0' : char}</span>
+              ))}
+            </h2>
             <p className="lead text-muted max-w-800 mx-auto">
               Explore our past events and stay tuned for upcoming opportunities
             </p>
