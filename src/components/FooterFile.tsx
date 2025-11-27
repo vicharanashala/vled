@@ -1,7 +1,7 @@
 import "../styles/footerFile.css";
 import { Link } from 'react-router-dom';
 import { FaLinkedin, FaYoutube, FaMapMarkerAlt, FaEnvelope, FaGithub } from 'react-icons/fa';
-import logo from '../assets/vled-logo.png';
+import logo from '../assets/VLED_footer.png';
 
 export const FooterWrapper = () => {
   return (
