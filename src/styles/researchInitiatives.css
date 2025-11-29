@@ -37,7 +37,7 @@ body, html {
 }
 
 .section-description:hover {
-  color: rgb(52, 152, 169);
+  color: rgba(228, 143, 57, 1);
 }
 
 .visit-research-btn {
