@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
             <Link to="/" className="nav-text">Home</Link>
             <Link to="/research" className="nav-text">Research</Link>
             <Link to="/fdp" className="nav-text">FDP</Link>
-            <Link to="/full stack bootcamp" className="nav-text">Bootcamp</Link>
+            <Link to="/full-stack-bootcamp" className="nav-text">Bootcamp</Link>
             <Link to="/events" className="nav-text">Events</Link>
             <Link to="/team" className="nav-text" style={{ display: 'none' }}>Team</Link>
             <Link to="/comingsoon" className="nav-text">Blog</Link>
