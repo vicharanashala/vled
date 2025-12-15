@@ -2,10 +2,15 @@
 
 .pageContainer {
   min-height: 100vh;
-  background: linear-gradient(135deg, rgb(240, 248, 250) 0%, rgb(224, 242, 246) 100%);
+  background: linear-gradient(
+    135deg,
+    rgb(240, 248, 250) 0%,
+    rgb(224, 242, 246) 100%
+  );
 }
 
-/* Navbar Styles */
+/* ================= NAVBAR ================= */
+
 .navbar {
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -38,14 +43,14 @@
 .navbarLink {
   color: #4b5563;
   text-decoration: none;
-  transition: color 0.2s;
 }
 
 .navbarLink:hover {
   color: rgb(52, 152, 169);
 }
 
-/* Hero Section */
+/* ================= HERO ================= */
+
 .hero {
   padding: 4rem 2rem;
   max-width: 1400px;
@@ -56,197 +61,51 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
-  align-items: center;
-}
-
-.heroText {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .heroSubtitle {
   font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   color: rgb(52, 152, 169);
-  margin: 0;
 }
 
 .heroTitle {
   font-size: clamp(2rem, 5vw, 3.75rem);
   font-weight: bold;
-  line-height: 1.2;
   color: rgb(52, 152, 169);
-  margin: 0;
 }
 
 .heroDescription {
   font-size: 1.125rem;
   color: #4b5563;
-  line-height: 1.75;
-  margin: 0;
 }
 
-.ctaButtons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+/* ================= CONTENT ================= */
 
-.primaryButton {
-  padding: 0.75rem 2rem;
-  color: white;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  background: linear-gradient(45deg, #3498a9, #66bbcd);
-  border: none;
-  box-shadow: 0 6px 20px rgba(52, 152, 169, 0.3);
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.primaryButton:hover {
-  transform: translateY(-2px);
-}
-
-.secondaryButton {
-  padding: 0.75rem 2rem;
-  background-color: white;
-  color: rgb(52, 152, 169);
-  font-weight: 600;
-  border-radius: 0.5rem;
-  border: 2px solid rgb(52, 152, 169);
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.secondaryButton:hover {
-  background-color: rgba(52, 152, 169, 0.05);
-}
-
-.heroImage {
-  background-color: #1a1a1a;
-  border-radius: 0.75rem;
-  padding: 1.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-.codeSnippet pre {
-  font-family: monospace;
-  font-size: 0.875rem;
-  color: #4ade80;
-  overflow-x: auto;
-  margin: 0;
-}
-
-/* Content Section */
 .contentSection {
   padding: 2rem;
   max-width: 1400px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
 }
 
 .contentSection p {
   font-size: 1.125rem;
   color: #374151;
-  line-height: 1.75;
-  margin: 0;
 }
 
-/* FAQ Section */
+/* ================= FAQ ================= */
+
 .faqSection {
   padding: 2rem;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.faqContainer {
-  background-color: transparent;
-  padding: 2rem;
-}
-
-.faqHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
 .faqTitle {
   font-size: 1.875rem;
   font-weight: bold;
   color: rgb(52, 152, 169);
-  margin: 0;
-}
-
-.editorControls {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.editButton {
-  padding: 0.5rem 1.5rem;
-  color: white;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  background: linear-gradient(45deg, #3498a9, #66bbcd);
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
-
-.editButton:hover {
-  opacity: 0.9;
-}
-
-.saveButton {
-  padding: 0.5rem 1.5rem;
-  background-color: #16a34a;
-  color: white;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.saveButton:hover {
-  background-color: #15803d;
-}
-
-.cancelButton {
-  padding: 0.5rem 1rem;
-  background-color: #d1d5db;
-  color: #374151;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s;
-}
-
-.cancelButton:hover {
-  background-color: #9ca3af;
-}
-
-.passwordInput {
-  padding: 0.5rem 1rem;
-  border: 2px solid #d1d5db;
-  border-radius: 0.5rem;
-  outline: none;
-  font-family: inherit;
-}
-
-.passwordInput:focus {
-  border-color: rgb(52, 152, 169);
 }
 
 .faqList {
@@ -258,126 +117,122 @@
 .faqItem {
   border: 2px solid rgba(52, 152, 169, 0.3);
   border-radius: 0.5rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.9);
   cursor: pointer;
-  box-shadow: 0 2px 8px rgba(52, 152, 169, 0.1);
-}
-
-.faqItem:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(52, 152, 169, 0.2);
 }
 
 .faqItemExpanded {
   border-color: rgb(52, 152, 169);
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 4px 16px rgba(52, 152, 169, 0.25);
-}
-
-.faqContent {
-  cursor: pointer;
 }
 
 .faqHeader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   padding: 1.5rem;
 }
 
 .faqQuestion {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #111827;
-  margin: 0;
-  padding-right: 1rem;
-  flex: 1;
-}
-
-.faqToggle {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: rgb(52, 152, 169);
-  flex-shrink: 0;
 }
 
 .faqAnswer {
   padding: 0 1.5rem 1.5rem;
   color: #374151;
-  line-height: 1.75;
 }
 
-.faqEditor {
-  padding: 1rem;
+/* ================= DISCORD SECTION ================= */
+
+.discordSection {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.discordContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.discordCard {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(52, 152, 169, 0.3);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(52, 152, 169, 0.15);
+}
+
+.discordTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(52, 152, 169);
+  margin-bottom: 0.25rem;
+}
+
+.discordSubtitle {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.discordChannels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.discordChannel {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid rgba(52, 152, 169, 0.2);
+  border-radius: 0.5rem;
 }
 
-.editorInput {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border: 2px solid #d1d5db;
-  border-radius: 0.5rem;
+.channelIcon {
+  color: rgb(52, 152, 169);
+}
+
+.discordDescription {
+  color: #374151;
+  margin-bottom: 1.5rem;
+}
+
+.discordJoinButton {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: linear-gradient(45deg, #3498a9, #66bbcd);
+  color: white;
   font-weight: 600;
-  outline: none;
-  font-family: inherit;
-}
-
-.editorInput:focus {
-  border-color: rgb(52, 152, 169);
-}
-
-.editorTextarea {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  border: 2px solid #d1d5db;
   border-radius: 0.5rem;
-  outline: none;
-  font-family: inherit;
-  resize: vertical;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(52, 152, 169, 0.3);
 }
 
-.editorTextarea:focus {
-  border-color: rgb(52, 152, 169);
+.discordJoinButton:hover {
+  transform: translateY(-2px);
 }
 
-/* Responsive Design */
+/* ================= RESPONSIVE ================= */
+
 @media (max-width: 768px) {
   .navbarMenu {
     display: none;
   }
-  
+
   .hero {
     padding: 2rem 1rem;
   }
-  
-  .contentSection {
+
+  .contentSection,
+  .faqSection,
+  .discordSection {
     padding: 1rem;
   }
-  
-  .faqSection {
-    padding: 1rem;
-  }
-  
-  .faqContainer {
-    padding: 1rem;
-  }
-  
-  .faqHeader {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  .arrow {
-  margin-left: 8px;
+  .discordChannels {
+    grid-template-columns: 1fr;
   }
-
-  .secondaryButton:hover .arrow {
-  transform: translateX(4px);
-  transition: transform 0.2s ease;
-  }
-
 }
