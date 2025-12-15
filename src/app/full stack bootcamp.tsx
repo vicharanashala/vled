@@ -3,7 +3,7 @@
 import { useState } from "react";
 import styles from "../styles/full-stack-bootcamp.module.css";
 import { Navbar } from "../components/navbar";
-import { redirect } from "react-router-dom";
+// import { redirect } from "react-router-dom";
 
 type FAQ = {
   question: string;
@@ -11,18 +11,18 @@ type FAQ = {
 };
 
 export default function FullStackBootcampPage() {
-  const EDIT_PASSWORD = "annam.ai";
+  // const EDIT_PASSWORD = "annam.ai";
 
-  const [isEditor, setIsEditor] = useState(false);
-  const [showPasswordInput, setShowPasswordInput] = useState(false);
-  const [password, setPassword] = useState("");
+  // const [isEditor, setIsEditor] = useState(false);
+  // const [showPasswordInput, setShowPasswordInput] = useState(false);
+  // const [password, setPassword] = useState("");
   const [expandedFaq, setExpandedFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setExpandedFaq(expandedFaq === index ? null : index);
   };
 
-  const [faqs, setFaqs] = useState<FAQ[]>([
+  const faqs: FAQ[] = [
     {
       question: "1. What is the Full Stack Development Bootcamp about?",
       answer:
@@ -88,43 +88,43 @@ export default function FullStackBootcampPage() {
       answer:
         "Yes, the bootcamp is designed to provide learning opportunities without any fees.",
     },
-  ]);
+  ];
 
-  const loginEditor = () => {
-    if (password === EDIT_PASSWORD) {
-      setIsEditor(true);
-      setShowPasswordInput(false);
-      setPassword("");
-    } else {
-      alert("Invalid password");
-    }
-  };
+  // const loginEditor = () => {
+  //   if (password === EDIT_PASSWORD) {
+  //     setIsEditor(true);
+  //     setShowPasswordInput(false);
+  //     setPassword("");
+  //   } else {
+  //     alert("Invalid password");
+  //   }
+  // };
 
-  const togglePasswordInput = () => {
-    setShowPasswordInput(!showPasswordInput);
-    setPassword("");
-  };
+  // const togglePasswordInput = () => {
+  //   setShowPasswordInput(!showPasswordInput);
+  //   setPassword("");
+  // };
 
-  const cancelEdit = () => {
-    setShowPasswordInput(false);
-    setPassword("");
-  };
+  // const cancelEdit = () => {
+  //   setShowPasswordInput(false);
+  //   setPassword("");
+  // };
 
-  const updateFaq = (
-    index: number,
-    field: "question" | "answer",
-    value: string
-  ) => {
-    const updated = [...faqs];
-    updated[index] = { ...updated[index], [field]: value };
-    setFaqs(updated);
-  };
+  // const updateFaq = (
+  //   index: number,
+  //   field: "question" | "answer",
+  //   value: string
+  // ) => {
+  //   const updated = [...faqs];
+  //   updated[index] = { ...updated[index], [field]: value };
+  //   setFaqs(updated);
+  // };
 
-  const saveChanges = () => {
-    // Here you can add code to save the FAQs to a database or API
-    alert("Changes saved successfully!");
-    setIsEditor(false); // Exit editor mode after saving
-  };
+  // const saveChanges = () => {
+  //   // Here you can add code to save the FAQs to a database or API
+  //   alert("Changes saved successfully!");
+  //   setIsEditor(false); // Exit editor mode after saving
+  // };
 
   return (
     <div className={styles.pageContainer}>
@@ -274,9 +274,9 @@ const bootcamp = {
                   className={`${styles.faqItem} ${
                     expandedFaq === index ? styles.faqItemExpanded : ""
                   }`}
-                  onClick={() => !isEditor && toggleFaq(index)}
+                  onClick={() => toggleFaq(index)}
                 >
-                  {isEditor ? (
+                  {/* {isEditor ? (
                     <div className={styles.faqEditor}>
                       <input
                         className={styles.editorInput}
@@ -296,19 +296,19 @@ const bootcamp = {
                         onClick={(e) => e.stopPropagation()}
                       />
                     </div>
-                  ) : (
-                    <div className={styles.faqContent}>
-                      <div className={styles.faqHeader}>
-                        <h3 className={styles.faqQuestion}>{faq.question}</h3>
-                        <span className={styles.faqToggle}>
-                          {expandedFaq === index ? "−" : "+"}
-                        </span>
-                      </div>
-                      {expandedFaq === index && (
-                        <div className={styles.faqAnswer}>{faq.answer}</div>
-                      )}
+                  ) : ( */}
+                  <div className={styles.faqContent}>
+                    <div className={styles.faqHeader}>
+                      <h3 className={styles.faqQuestion}>{faq.question}</h3>
+                      <span className={styles.faqToggle}>
+                        {expandedFaq === index ? "−" : "+"}
+                      </span>
                     </div>
-                  )}
+                    {expandedFaq === index && (
+                      <div className={styles.faqAnswer}>{faq.answer}</div>
+                    )}
+                  </div>
+                  {/* )} */}
                 </div>
               ))}
             </div>
