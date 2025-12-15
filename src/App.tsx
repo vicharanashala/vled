@@ -8,6 +8,7 @@ import Partners from './app/partners';
 import Events from './app/events';
 import About from './app/about';
 import FDP from './app/fdp';
+import FullStackBootcamp from './app/full stack bootcamp';
 // import { Blog } from './app/blog';
 import ScrollToTop from './components/ScrollToTop';
 import HashScroller from './components/HashScroller';
@@ -46,6 +47,7 @@ function App() {
         <Route path="/terms" element={<Terms />} />
         <Route path="/comingsoon" element={<ComingSoon />} />
         <Route path="/collaborations" element={<Collaborations />} />
+        <Route path="/full stack bootcamp" element={<FullStackBootcamp />} />
       </Routes>
     </Router>
   );

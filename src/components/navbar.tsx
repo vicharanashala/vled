@@ -23,6 +23,7 @@ export const Navbar: React.FC = () => {
             <Link to="/" className="nav-text">Home</Link>
             <Link to="/research" className="nav-text">Research</Link>
             <Link to="/fdp" className="nav-text">FDP</Link>
+            <Link to="/full stack bootcamp" className="nav-text">Bootcamp</Link>
             <Link to="/events" className="nav-text">Events</Link>
             <Link to="/team" className="nav-text" style={{ display: 'none' }}>Team</Link>
             <Link to="/comingsoon" className="nav-text">Blog</Link>
@@ -45,6 +46,7 @@ export const Navbar: React.FC = () => {
           <Link to="/" className="nav-text" onClick={handleNavLinkClick}>Home</Link>
           <Link to="/research" className="nav-text" onClick={handleNavLinkClick}>Research</Link>
           <Link to="/fdp" className="nav-text" onClick={handleNavLinkClick}>FDP</Link>
+          <Link to="/full stack bootcamp" className="nav-text" onClick={handleNavLinkClick}>Bootcamp</Link>
           <Link to="/events" className="nav-text" onClick={handleNavLinkClick}>Events</Link>
           <Link to="/team" className="nav-text" onClick={handleNavLinkClick} style={{ display: 'none' }}>Team</Link>
           <Link to="/comingsoon" className="nav-text" onClick={handleNavLinkClick}>Blog</Link>
