@@ -1,9 +1,9 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import "../styles/researchApproach.css";
 
 export const ResearchApproach: React.FC = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   return (
     <div id="research-approach" className="research-approach-container">

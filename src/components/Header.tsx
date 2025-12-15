@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaChevronDown } from 'react-icons/fa';
+// import { FaChevronDown } from 'react-icons/fa';
 import '../styles/header.css';
 import { TypedText } from './TypedText';
 import { ImageCarousel } from './ImageCarousel';

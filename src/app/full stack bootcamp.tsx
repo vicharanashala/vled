@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import styles from '../styles/full-stack-bootcamp.module.css';
+import styles from "../styles/full-stack-bootcamp.module.css";
+import { Navbar } from "../components/navbar";
+import { redirect } from "react-router-dom";
 
 type FAQ = {
   question: string;
@@ -120,184 +122,199 @@ export default function FullStackBootcampPage() {
 
   const saveChanges = () => {
     // Here you can add code to save the FAQs to a database or API
-    alert('Changes saved successfully!');
+    alert("Changes saved successfully!");
     setIsEditor(false); // Exit editor mode after saving
   };
 
   return (
-    <main className={styles.container}>
-      {/* ================= HERO ================= */}
-      <section className={styles.hero}>
-        <div className={styles.heroContent}>
-          <div className={styles.heroText}>
-            <p className={styles.heroSubtitle}>
-              An IIT Ropar Initiative
-            </p>
-            <h1 className={styles.heroTitle}>
-              Full Stack Development Bootcamp
-            </h1>
-            <p className={styles.heroDescription}>
-              Master the MERN Stack and build complete web applications with hands-on training from industry experts.
-            </p>
-            <div className={styles.ctaButtons}>
-              <button className={styles.primaryButton}>
-                Register Now
-              </button>
-              <button className={styles.secondaryButton}>
-                Learn More
-              </button>
+    <div className={styles.pageContainer}>
+      <Navbar />
+
+      <main>
+        {/* ================= HERO ================= */}
+        <section className={styles.hero}>
+          <div className={styles.heroContent}>
+            <div className={styles.heroText}>
+              <p className={styles.heroSubtitle}>An IIT Ropar Initiative</p>
+              <h1 className={styles.heroTitle}>
+                Full Stack Development Bootcamp
+              </h1>
+              <p className={styles.heroDescription}>
+                Master the MERN Stack and build complete web applications with
+                hands-on training from industry experts.
+              </p>
+              <div className={styles.ctaButtons}>
+                <button
+                  className={styles.primaryButton}
+                  onClick={() =>
+                    window.open(
+                      "https://forms.zohopublic.in/annamai1/form/EventRegistrationForm/formperma/HYkA1u8O5qjotN_Y4fobUEF699x-iawUjO2sG-cUK4Q",
+                      "_blank"
+                    )
+                  }
+                >
+                  Register Now
+                </button>{" "}
+                <button
+                  className={styles.secondaryButton}
+                  onClick={() =>
+                    window.open("https://vibe.vicharanashala.ai/", "_blank")
+                  }
+                >
+                  Explore ViBe
+                </button>
+              </div>
             </div>
-          </div>
-          <div className={styles.heroImage}>
-            <div className={styles.codeSnippet}>
-              <pre>
-                <code>
-                  {`// Start your coding journey today
+            <div className={styles.heroImage}>
+              <div className={styles.codeSnippet}>
+                <pre>
+                  <code>
+                    {`// Start your coding journey today
 const bootcamp = {
   stack: ['MongoDB', 'Express', 'React', 'Node.js'],
   duration: '12 weeks',
   level: 'Beginner to Advanced',
   projects: 'Real-world applications'
 };`}
-                </code>
-              </pre>
+                  </code>
+                </pre>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* ================= CONTENT ================= */}
-      <section className={styles.contentSection}>
-        <p>
-          The Full Stack Development Bootcamp is an initiative by the
-          Vicharanashala Lab for Education Design (VLED) in collaboration with
-          Annam.AI, designed for learners who wish to begin their journey in
-          full-stack web development.
-        </p>
+        {/* ================= CONTENT ================= */}
+        <section className={styles.contentSection}>
+          <p>
+            The Full Stack Development Bootcamp is an initiative by the
+            Vicharanashala Lab for Education Design (VLED) in collaboration with
+            Annam.AI, designed for learners who wish to begin their journey in
+            full-stack web development.
+          </p>
 
-        <p>
-          This bootcamp introduces participants to core full-stack development
-          concepts and provides exposure to industry-relevant technologies. It is
-          intended to support learners in moving from learning individual
-          concepts to understanding how complete digital solutions are
-          developed.
-        </p>
+          <p>
+            This bootcamp introduces participants to core full-stack development
+            concepts and provides exposure to industry-relevant technologies. It
+            is intended to support learners in moving from learning individual
+            concepts to understanding how complete digital solutions are
+            developed.
+          </p>
 
-        <p>
-          The program offers a comprehensive full-stack development curriculum,
-          aligned with current industry expectations. It is suitable for
-          students and early-stage learners who are interested in building a
-          strong foundation in web development.
-        </p>
+          <p>
+            The program offers a comprehensive full-stack development
+            curriculum, aligned with current industry expectations. It is
+            suitable for students and early-stage learners who are interested in
+            building a strong foundation in web development.
+          </p>
 
-        <p>
-          Participants who successfully complete the bootcamp and demonstrate
-          strong performance may be considered for internship opportunities at
-          VLED and Annam.AI, where they may contribute to real-time, open-source
-          initiatives in areas such as digital agriculture and education
-          technology.
-        </p>
-      </section>
+          <p>
+            Participants who successfully complete the bootcamp and demonstrate
+            strong performance may be considered for internships at VLED and
+            Annam.AI, where they may contribute to real-time, open-source
+            initiatives in areas such as digital agriculture and education
+            technology.
+          </p>
+        </section>
 
-      {/* ================= FAQ ================= */}
-      <section className={styles.faqSection}>
-        <div className={styles.faqContainer}>
-          <div className={styles.faqHeader}>
-            <h2 className={styles.faqTitle}>
-              Frequently Asked Questions (FAQ)
-            </h2>
+        {/* ================= FAQ ================= */}
+        <section className={styles.faqSection}>
+          <div className={styles.faqContainer}>
+            <div className={styles.faqHeader}>
+              <h2 className={styles.faqTitle}>
+                Frequently Asked Questions (FAQ)
+              </h2>
 
-            <div className={styles.editorControls}>
-              {isEditor ? (
-                <button
-                  onClick={saveChanges}
-                  className={`${styles.editButton} ${styles.saveButton}`}
-                >
-                  Save Changes
-                </button>
-              ) : (
-                <div className={styles.editorControls}>
-                  {showPasswordInput ? (
-                    <>
-                      <input
-                        type="password"
-                        placeholder="Enter editor password"
-                        className={styles.passwordInput}
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        autoFocus
-                      />
-                      <button
-                        onClick={loginEditor}
-                        className={styles.saveButton}
-                      >
-                        Submit
-                      </button>
-                      <button
-                        onClick={cancelEdit}
-                        className={styles.cancelButton}
-                      >
-                        Cancel
-                      </button>
-                    </>
-                  ) : (
-                    <button
-                      onClick={togglePasswordInput}
-                      className={styles.editButton}
-                    >
-                      <i className="fas fa-edit me-2"></i>Edit
-                    </button>
-                  )}
-                </div>
-              )}
-            </div>
-          </div>
-
-          <div className={styles.faqList}>
-            {faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className={`${styles.faqItem} ${expandedFaq === index ? styles.faqItemExpanded : ''}`}
-                onClick={() => !isEditor && toggleFaq(index)}
-              >
+              {/* <div className={styles.editorControls}>
                 {isEditor ? (
-                  <div className={styles.faqEditor}>
-                    <input
-                      className={styles.editorInput}
-                      value={faq.question}
-                      onChange={(e) => updateFaq(index, "question", e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    />
-                    <textarea
-                      className={styles.editorTextarea}
-                      rows={3}
-                      value={faq.answer}
-                      onChange={(e) => updateFaq(index, "answer", e.target.value)}
-                      onClick={(e) => e.stopPropagation()}
-                    />
-                  </div>
+                  <button onClick={saveChanges} className={styles.saveButton}>
+                    Save Changes
+                  </button>
                 ) : (
-                  <div className={styles.faqContent}>
-                    <div className={styles.faqHeader}>
-                      <h3 className={styles.faqQuestion}>{faq.question}</h3>
-                      <span className={styles.faqToggle}>
-                        {expandedFaq === index ? '−' : '+'}
-                      </span>
-                    </div>
-                    {expandedFaq === index && (
-                      <div className={styles.faqAnswer}>
-                        {faq.answer}
-                      </div>
+                  <div className={styles.editorControls}>
+                    {showPasswordInput ? (
+                      <>
+                        <input
+                          type="password"
+                          placeholder="Enter editor password"
+                          className={styles.passwordInput}
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
+                          autoFocus
+                        />
+                        <button
+                          onClick={loginEditor}
+                          className={styles.editButton}
+                        >
+                          Submit
+                        </button>
+                        <button
+                          onClick={cancelEdit}
+                          className={styles.cancelButton}
+                        >
+                          Cancel
+                        </button>
+                      </>
+                    ) : (
+                      <button
+                        onClick={togglePasswordInput}
+                        className={styles.editButton}
+                      >
+                        Edit
+                      </button>
                     )}
                   </div>
                 )}
-              </div>
-            ))}
+              </div> */}
+            </div>
+
+            <div className={styles.faqList}>
+              {faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className={`${styles.faqItem} ${
+                    expandedFaq === index ? styles.faqItemExpanded : ""
+                  }`}
+                  onClick={() => !isEditor && toggleFaq(index)}
+                >
+                  {isEditor ? (
+                    <div className={styles.faqEditor}>
+                      <input
+                        className={styles.editorInput}
+                        value={faq.question}
+                        onChange={(e) =>
+                          updateFaq(index, "question", e.target.value)
+                        }
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                      <textarea
+                        className={styles.editorTextarea}
+                        rows={3}
+                        value={faq.answer}
+                        onChange={(e) =>
+                          updateFaq(index, "answer", e.target.value)
+                        }
+                        onClick={(e) => e.stopPropagation()}
+                      />
+                    </div>
+                  ) : (
+                    <div className={styles.faqContent}>
+                      <div className={styles.faqHeader}>
+                        <h3 className={styles.faqQuestion}>{faq.question}</h3>
+                        <span className={styles.faqToggle}>
+                          {expandedFaq === index ? "−" : "+"}
+                        </span>
+                      </div>
+                      {expandedFaq === index && (
+                        <div className={styles.faqAnswer}>{faq.answer}</div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        
-      </section>
-    </main>
-    
+        </section>
+      </main>
+    </div>
   );
 }
