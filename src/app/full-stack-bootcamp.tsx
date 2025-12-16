@@ -94,7 +94,6 @@ export default function FullStackBootcampPage() {
         <section className={styles.hero}>
           <div className={styles.heroContent}>
             <div className={styles.heroText}>
-              <p className={styles.heroSubtitle}>An IIT Ropar Initiative</p>
               <h1 className={styles.heroTitle}>
                 Full Stack Development Bootcamp
               </h1>
