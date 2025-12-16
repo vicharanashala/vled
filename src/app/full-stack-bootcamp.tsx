@@ -3,7 +3,6 @@
 import { useState } from "react";
 import styles from "../styles/full-stack-bootcamp.module.css";
 import { Navbar } from "../components/navbar";
-import React from "react";
 import { MessageCircle, Users } from "lucide-react";
 
 type FAQ = {
