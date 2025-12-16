@@ -64,7 +64,7 @@
   display: inline-block;
   color: rgb(52, 152, 169);
   transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .events-page .hero-title-letter:hover {
@@ -76,7 +76,7 @@
   display: inline-block;
   color: rgba(228, 143, 57, 1);
   transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .events-page .hero-subtitle-letter:hover {
@@ -88,7 +88,7 @@
   display: inline-block;
   color: rgb(52, 152, 169);
   transition: color 0.3s ease, transform 0.3s ease;
-  cursor: pointer;
+  cursor: default;
 }
 
 .events-page .section-title-letter:hover {
