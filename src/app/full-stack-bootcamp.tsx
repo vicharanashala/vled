@@ -132,7 +132,6 @@ export default function FullStackBootcampPage() {
                     {`// Start your coding journey today
 const bootcamp = {
   stack: ['MongoDB', 'Express', 'React', 'Node.js'],
-  duration: '12 weeks',
   level: 'Beginner to Advanced',
   projects: 'Real-world applications'
 };`}
