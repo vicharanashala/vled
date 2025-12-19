@@ -84,6 +84,11 @@ export default function FullStackBootcampPage() {
       answer:
         "Yes, the bootcamp is designed to provide learning opportunities without any fees.",
     },
+    {
+      question: "14. Is there a tutorial available for the platform?",
+      answer:
+        "Yes, the bootcamp tutorial is available in the ViBe homepage and in youtube: https://www.youtube.com/watch?v=8ytNdYlK-BU ",
+    },
   ];
 
   return (
