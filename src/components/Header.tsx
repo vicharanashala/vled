@@ -6,14 +6,16 @@ import { ImageCarousel } from './ImageCarousel';
 
 const carouselImages = [
   {
-    src: "", 
+    src: "",
     alt: "Collaboration Video",
     title: "VLED Collaboration Showcase",
     description: "Watch our latest collaboration highlights",
     type: "video" as const,
-    videoId: "58sR6ewu9FY" 
+    // videoId: "58sR6ewu9FY" 
+    videoId: "PIIiMWbx2A0"
   },
-  {src: "/images/lab/lab3.jpg",
+  {
+    src: "/images/lab/lab3.jpg",
     alt: "Lab Images",
     title: "Collaborative Learning",
     description: "A space designed for collaborative learning and innovation",
@@ -32,7 +34,7 @@ const carouselImages = [
     title: "MMTTP sponsored CBPAI by IIT Ropar",
     description: "",
     type: "image" as const
-  }, 
+  },
   // {
   //   src: "/images/events/7.png",
   //   alt: "MMTTP",
@@ -78,7 +80,7 @@ export const Header: React.FC<{ onLearnMore?: () => void; onContact?: () => void
         </div>
       </div>
       <div className="image-group">
-        <ImageCarousel 
+        <ImageCarousel
           images={carouselImages}
           autoSlide={true}
           slideInterval={6000}
