@@ -75,9 +75,11 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/log.png',
+    image: 'img/logo.png',
     colorMode: {
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: false,
+      defaultMode: 'light', 
+      disableSwitch: false, 
     },
     navbar: {
       title: '',
