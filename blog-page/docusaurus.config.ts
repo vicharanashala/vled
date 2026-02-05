@@ -87,6 +87,24 @@ const config: Config = {
         src: 'img/logo.png',
       },
       items: [
+        {
+          to: 'https://vicharanashala.ai/', label: 'Home', position:'right'
+        },
+        {
+          to: 'https://vicharanashala.ai/research', label: 'Research', position:'right'
+        },
+        {
+          to: '/https://vicharanashala.ai/fdp', label: 'FDP', position:'right'
+        },
+        {
+          to: 'https://vicharanashala.ai/full-stack-bootcamp', label: 'Bootcamp', position:'right'
+        },
+        {
+          to: 'https://vicharanashala.ai/events', label: 'Events', position:'right'
+        },
+        {
+          to: '/', label: 'Blog', position:'right'
+        },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'tutorialSidebar',
