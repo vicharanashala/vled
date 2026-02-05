@@ -87,19 +87,29 @@ const config: Config = {
       },
       items: [
         {
-          to: 'https://vicharanashala.ai/', label: 'Home', position:'right'
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vicharanashala.ai/" class="navbar__link">Home</a>',
         },
         {
-          to: 'https://vicharanashala.ai/research', label: 'Research', position:'right'
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vicharanashala.ai/research" class="navbar__link">Research</a>',
         },
         {
-          to: '/https://vicharanashala.ai/fdp', label: 'FDP', position:'right'
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vicharanashala.ai/fdp" class="navbar__link">FDP</a>',
         },
         {
-          to: 'https://vicharanashala.ai/full-stack-bootcamp', label: 'Bootcamp', position:'right'
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vicharanashala.ai/full-stack-bootcamp" class="navbar__link">Bootcamp</a>',
         },
         {
-          to: 'https://vicharanashala.ai/events', label: 'Events', position:'right'
+          type: 'html',
+          position: 'right',
+          value: '<a href="https://vicharanashala.ai/events" class="navbar__link">Events</a>',
         },
         {
           to: '/', label: 'Blog', position:'right'
