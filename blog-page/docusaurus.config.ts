@@ -57,7 +57,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/vicharanashala/vled/tree/main/',
+            'https://github.com/vicharanashala/vled/tree/master/blog-page/',
 
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
