@@ -142,9 +142,14 @@ export const Navbar: React.FC = () => {
             <Link to="/team" className="nav-text" style={{ display: "none" }}>
               Team
             </Link>
-            <Link to="/comingsoon" className="nav-text">
+            <a
+              href="https://vicharanashala.github.io/vled/"
+              className="nav-text"
+              rel="noopener noreferrer"
+            >
               Blog
-            </Link>
+            </a>
+
           </div>
           <Link to="/contact">
             <button className="nav-button">
