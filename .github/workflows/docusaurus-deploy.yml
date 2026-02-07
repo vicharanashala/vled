@@ -30,7 +30,7 @@ jobs:
 
       - name: Install dependencies (blog only)
         working-directory: blog-page
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Build Docusaurus
         working-directory: blog-page
