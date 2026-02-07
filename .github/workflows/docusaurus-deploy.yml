@@ -45,4 +45,5 @@ jobs:
         working-directory: blog-page
         env:
           GIT_USER: vicharanashala
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: pnpm run deploy
