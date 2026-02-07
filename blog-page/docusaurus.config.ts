@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'VicharanaShala Blog',
-  tagline: 'Blogs page for VicharanaShala',
+  title: 'Vicharanashala',
+  tagline: 'Blog page for Vicharanashala',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -15,7 +15,7 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://vicharanashala.github.io',
+  url: 'https://vicharanashala.github.io/vled',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/vled/',
@@ -84,7 +84,7 @@ const config: Config = {
     navbar: {
       title: '',
       logo: {
-        alt: 'VicharanaShala Logo',
+        alt: 'Vicharanashala Logo',
         src: 'img/logo.png',
       },
       items: [
