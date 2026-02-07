@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkblog_page=globalThis.webpackChunkblog_page||[]).push([[472],{5513(e){e.exports=JSON.parse('{"title":"All posts","items":[{"title":"Thinking Before Numbers","permalink":"/vled/ThinkingBeforeNumbers","unlisted":false,"date":"2026-02-07T00:00:00.000Z"}]}')}}]);
