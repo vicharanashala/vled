@@ -1,0 +1,44 @@
+name: Deploy Docusaurus Blog
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "blog-page/**"
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "pnpm"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Install dependencies (blog only)
+        working-directory: blog-page
+        run: pnpm install
+
+      - name: Build Docusaurus
+        working-directory: blog-page
+        run: pnpm run build
+
+      - name: Deploy to GitHub Pages
+        working-directory: blog-page
+        env:
+          GIT_USER: vicharanashala
+        run: pnpm run deploy
