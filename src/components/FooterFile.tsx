@@ -98,7 +98,12 @@ export const FooterWrapper = () => {
           <div className="footer-bottom-content">
             {/* Resources */}
             <div className="footer-bottom-links">
-              <Link to="/comingsoon">Blogs</Link>
+              <a
+              href="https://vicharanashala.github.io/vled/"
+              rel="noopener noreferrer"
+            >
+              Blog
+            </a>
               <span className="separator">•</span>
               <Link to="/careers">Careers</Link>
               <span className="separator">•</span>
