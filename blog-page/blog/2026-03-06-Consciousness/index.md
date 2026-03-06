@@ -1,0 +1,16 @@
+---
+slug: CanAIBeConscious
+title: Can AI Be Conscious?
+authors: [prakash-hegade]
+---
+
+We all live with two dimensions of meaning in how we understand things. One meaning is given by the world in the form of standard definitions, while the other is internalized through our thoughts and lived experiences.  The ability to recognize both and reflect on how we interpret them, when to use what, may be is what we call consciousness. Let’s take a pause here. 
+
+<!-- truncate -->
+Let us say we go to an AI assistant and ask to write a poem about rain. AI would instantly predict the next related words and create a poem. A conscious human would rather recollect all the lived experiences like the smell of the wet soil, the sound of rain on different surfaces, the calm and chaos that rain brings in, etc., and then pen down the experiences.  We humans write from lived experiences.  From a scientific perspective, consciousness refers to the brain processes that create awareness when a person recalls memories, senses emotions, and reflects on them. From a neuroscience perspective, the hard problem of consciousness is how this self-awareness produces the inner experience. From a philosophical perspective, this situation raises questions like: if an AI can produce a considerably good poem, does it actually experience rain, or is it simply processing patterns in the language? 
+
+Keeping all this in mind, we can further debate whether consciousness arises from complex information processing or whether it requires something more than computation. Humans writing the poem have basic consciousness, in which they are aware of the world and their senses, and higher consciousness, in which they reflect on memories and emotions while composing the poem, whereas an AI or a large language model generates text by analysing patterns in data without any inner awareness or lived experience.
+
+Human and AI architectures differ primarily in their foundations. Human intelligence arises from a biological brain that integrates perception, memory, emotion, and lived experience, and AI relies on engineered models trained on large datasets for specific tasks. AI demonstrates that problem solving can occur without subjective experience. Yet higher abilities such as reflection, creativity, and moral reasoning may depend on awareness. Functionalist theories argue that if a system perceives, integrates information, reflects on itself, and adapts, consciousness may emerge regardless of whether it is biological or artificial. Theories like Integrated Information Theory and Global Workspace Theory propose that consciousness arises from deeply integrated information and globally shared internal processing, which current AI largely lacks. The Hard Problem of Consciousness points out that explaining perception and behaviour does not explain why there is a subjective inner experience. Similarly, the Chinese Room argument suggests that a system may process symbols and produce correct responses without understanding or experiencing anything.
+
+If we can’t solve the Hard Problem, is there a “Consciousness Test” that goes deeper than the Turing Test? Can we create a conscious AI or a system that behaves like a conscious being? What do you think will work? All this leads to a deeper question: is consciousness necessary for intelligence?
