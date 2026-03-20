@@ -13,4 +13,4 @@ When AI gives a solution, we read a well-structured response, maybe a few paragr
 
 This is also true with all of us. When we don’t understand a concept, we often write more. We try to explain in different perspectives; we try to cover all possibilities. We fill space. When we understand something clearly, we write in precise terms. We write what is needed and we stop. LLM currently is the first kind of ‘us’. There is a rush of associations, patterns, and possible continuations flowing through them. And in that rush, they assemble answers that fit the context (yes, probability). The fluency hides the uncertainty. Depth requires judgment, restraint, and an understanding of what not to say. 
 
-So the “wow” is not the problem. Stopping at the “wow” is.
+So the “wow” is not a problem. But if we stop at the “wow,” then it definitely is.
