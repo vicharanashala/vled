@@ -1,6 +1,6 @@
 ---
 slug: InvisibleLayers
-title: Insivible Layers
+title: Invisible Layers
 authors: [prakash-hegade]
 ---
 
