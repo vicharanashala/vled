@@ -1,0 +1,17 @@
+---
+slug: WhoStoletheCuriosity
+title: Who Stole the Curiosity?
+authors: [prakash-hegade]
+---
+
+Where is research heading? Does it still make sense that every research paper begins with the same ritual? Does every piece of research need to be packaged into the same formal sections? Does every discovery really begin with an introduction and end with a conclusion? Programming began as a way of thinking. Over time, we created paradigms, conventions, design patterns, frameworks, and best practices so that more people could write software. In doing so, programming became easier to learn, but somewhere along the way we also forgot that programming is fundamentally about solving problems, not following patterns.
+
+<!-- truncate -->
+
+I fear research is slowly walking the same path. In our attempt to make research teachable and accessible, we have given it structure. Structure slowly became a process. The process became a ritual. Today, we often mistake following the ritual for doing research. Somewhere along the way, we seem to have taken away the very essence of what research was meant to be.
+
+The heart-aching part of research is that many who graduated through this methodical approach of how research has to be done push the very same approach onto their juniors. Instead of guiding them towards the intuition and magic that research can bring, they guide them through a step-by-step process of how to do research. That is not research. Instead of making one think and explore, they make you work section by section and follow a one-stop guide. That is not research. Instead of making one curious, uncertain, and willing to live the magical journey of research, they make you believe in methods and procedures. That is not research. Yes. We have massacred the meaning of research and the grace it once carried by attaching it to the number of publications. It has been passed on to newer generations, turning research into a timeline-driven, milestone-oriented, yet another course.
+
+What is research then? No, it cannot be defined. Like the name itself says, it is searching yet again. That is all. We search for new meanings. We search for new ways to think. We search for new ways to see. We search for new ways to understand. We search for new ways to bring order to chaos, only for that order to reveal a new chaos waiting to be understood. Research is about living a passion that slowly makes you philosophical. Research is a journey where you get to decide when it has made an impact and when you are ready to stop. Research is a journey that cannot be explained in words. It has to be lived. Research is a freedom that one gets to choose, and not a prison where one is made to live.
+
+Let a researcher decide how they want to organize the document. Let a researcher decide how they want to demonstrate the impact. Let research live a messy life to discover what works and what deserves another experiment. Let the supervisor become a philosopher again, not a gatekeeper. Let academia celebrate curiosity before it celebrates compliance. I hope the age of AI helps us regain what real research is. I hope AI frees researchers from rituals that have little to do with discovery. I hope AI throws away the meaningless paperwork that exists only to satisfy a process. I hope AI dismantles systems that reward compliance more than curiosity. I hope AI rebuilds the very essence of research, where questions matter more than templates and discovery matters more than documentation. 
