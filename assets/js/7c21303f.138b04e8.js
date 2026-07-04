@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkblog_page=globalThis.webpackChunkblog_page||[]).push([[16],{8966(e){e.exports=JSON.parse('{"metadata":{"permalink":"/vled/page/2","page":2,"postsPerPage":10,"totalPages":2,"totalCount":11,"previousPage":"/vled/","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
