@@ -1,7 +1,7 @@
 ---
 slug: YourSeatYourFee
 title: Your Seat Number Is Your Fee 
-authors: [core-team]
+authors: [prakash-hegade]
 ---
 
 As an education design lab, we keep discussing several things around teaching, learning, assessments, scaling quality learning, and all sorts of things. Sometimes we go back to the fundamental level of questioning: are we even needed in a classroom? What happens in a classroom? But at times we also have other discussions which are not at all related to education design, but are definitely a sign of how nerdy our brainstorming conversations get. Here is one example.
